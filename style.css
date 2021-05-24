@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  /* default font-size: 16px -> 62.5% * 16px = 10px */
+  scroll-behavior: smooth;
+  /* => 1rem = 8px*/
+  font-size: 50% !important; }
+  @media screen and (min-width: 641px) {
+    html {
+      /* => 1rem = 10px*/
+      font-size: 62.5% !important; } }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.033rem;
+  color: #98262b;
+  background: #fafafa; }
+
+header {
+  color: red; }
+
+.u-heading-1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem; }
+
+.u-heading-2 {
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: .23rem; }
+
+.u-section-padding {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem; }
+
+.u-first-section-page {
+  padding-top: 4rem; }

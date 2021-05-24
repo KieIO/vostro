@@ -1,0 +1,28 @@
+@import './variable.scss';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    /* default font-size: 16px -> 62.5% * 16px = 10px */
+    scroll-behavior: smooth;
+    /* => 1rem = 8px*/
+    font-size: 50% !important;
+    @include mq('tablet') {
+        /* => 1rem = 10px*/
+        font-size: 62.5% !important;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-size: $fontsize-paragraph;
+    line-height: $lineheight-paragraph;
+    letter-spacing: 0.033rem;
+    color: $color-primary;
+    background: $color-white;
+    // font-family: 'Poppins', sans-serif;
+}
