@@ -11,7 +11,7 @@
             object-fit: cover;
         }
     }
-    .content-article {
+    .second-column {
         text-align: center;
         margin-top: 4rem;
         h2 {
@@ -22,6 +22,22 @@
         }
         .bottom {
             margin-top: 3rem;
+        }
+    }
+
+    @include mq("tablet") {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .img-wrap, .second-column {
+            flex: 1;
+        }
+        .second-column {
+            margin-left: 2rem;
+            .content-article {
+                max-width: 60rem;
+                margin: auto;
+            }
         }
     }
 }
