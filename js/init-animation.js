@@ -1,3 +1,4 @@
 AOS.init({
-    offset: 100
+    offset: 200,
+    anchorPlacement: 'center-bottom'
 });
