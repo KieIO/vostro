@@ -1,0 +1,16 @@
+.title-left-particle {
+    position: relative;
+    padding-right: 5rem;
+    padding-top: 8rem;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url("../assets/particles/particle-left-title.svg");
+        top: 0;
+        right: -5rem;
+        width: 18rem;
+        height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
