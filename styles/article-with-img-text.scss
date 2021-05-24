@@ -1,0 +1,27 @@
+@import '../styles/variable.scss';
+
+.article-with-img-text {
+    margin: auto;
+    .img-wrap {
+        border-radius: $border-radius;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .content-article {
+        text-align: center;
+        margin-top: 4rem;
+        h2 {
+            margin-bottom: 0;
+        }
+        .content {
+            margin-top: 1rem;
+        }
+        .bottom {
+            margin-top: 3rem;
+        }
+    }
+}

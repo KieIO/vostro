@@ -1,15 +1,17 @@
+@import "./variable.scss";
+
 .u-heading-1 {
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 }
 
 .u-heading-2 {
     font-size: 2.6rem;
     line-height: 3.6rem;
     text-transform: uppercase;
-    letter-spacing: .23rem;
+    letter-spacing: 0.23rem;
 }
 
 .u-section-padding {
@@ -19,4 +21,54 @@
 
 .u-first-section-page {
     padding-top: 4rem;
+}
+
+.u-button {
+    all: unset;
+    border-radius: $border-radius-button;
+    text-align: center;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.u-button-primary {
+    background: $color-primary-2;
+    color: $color-white;
+    &:hover {
+        background: rgba($color-primary-2, 0.9);
+        box-shadow: $boxshodow;
+    }
+    &:focus,
+    &:visited {
+        color: rgba($color-white, 0.8);
+    }
+    &:focus {
+        outline: 1px solid 5px rgba($color-primary-2, 0.5);
+    }
+    &:disabled {
+        color: $color-disable;
+        cursor: not-allowed;
+    }
+}
+
+.u-button-ghost {
+    background: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    &:hover {
+        box-shadow: $boxshodow;
+    }
+    &:focus,
+    &:visited {
+        color: rgba($color-primary, 0.8);
+    }
+    &:focus {
+        outline: 1px solid 5px rgba($color-primary, 0.5);
+    }
+    &:disabled {
+        background: rgba($color-disable, 0.2);
+        color: $color-disable;
+        cursor: not-allowed;
+    }
 }
