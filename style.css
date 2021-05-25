@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .article-with-img-text {
   margin: auto; }
   .article-with-img-text .img-wrap {
@@ -82,9 +87,12 @@ body {
   .check-list .check-list-wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: 75%;
+    max-width: 80%;
     justify-content: center;
     align-items: center; }
+    @media screen and (min-width: 641px) {
+      .check-list .check-list-wrapper {
+        max-width: 75%; } }
     .check-list .check-list-wrapper .check-list-item {
       font-style: italic;
       font-weight: 400;
@@ -105,8 +113,11 @@ body {
     font-weight: 400;
     line-height: 3.8rem;
     font-size: 3.4rem;
-    max-width: 75%;
+    max-width: 85%;
     text-align: center; }
+    @media screen and (min-width: 641px) {
+      .description .description-content {
+        max-width: 75%; } }
 
 header {
   color: red; }
@@ -115,14 +126,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
   .tag-buttons-list .tag-buttons-list-warpper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 75%; }
+    width: 85%;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 641px) {
+      .tag-buttons-list .tag-buttons-list-warpper {
+        width: 75%; } }
     .tag-buttons-list .tag-buttons-list-warpper .tag-buttons-list-item {
-      min-width: 17rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      width: 10rem;
       height: 4rem;
       border: 1px solid #98262B;
       box-sizing: border-box;
@@ -130,6 +149,9 @@ header {
       display: inline;
       text-align: center;
       line-height: 4rem; }
+      @media screen and (min-width: 641px) {
+        .tag-buttons-list .tag-buttons-list-warpper .tag-buttons-list-item {
+          width: 17rem; } }
 
 .title-left-particle {
   position: relative;
