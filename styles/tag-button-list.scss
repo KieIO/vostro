@@ -1,0 +1,25 @@
+@import "../styles/variable.scss";
+.tag-buttons-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .tag-buttons-list-warpper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: $max-width;
+        // width: 100%;
+        .tag-buttons-list-item{
+            min-width: 17rem;
+            height: 4rem;
+            border: 1px solid #98262B;
+            box-sizing: border-box;
+            border-radius: 20rem;
+            display: inline;
+            text-align: center;
+            line-height: 4rem;
+            // vertical-align: middle;
+        }
+    }
+}
