@@ -6,6 +6,6 @@ Set up:
 - Install: Live Server (in VS code)
 - Run:
     + yarn watch: watch change without reload page
-    + Note: unsing Go Live to look change pages in realtime
+    + Note: using Go Live to look change pages in realtime
 
-    + yarn scss: compile scss to css
+    + yarn scss: add prefix, compile scss to css
