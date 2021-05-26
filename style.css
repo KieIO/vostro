@@ -22,7 +22,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .article-with-img-text .img-wrap, .article-with-img-text .second-column {
+      .article-with-img-text.revert {
+        flex-direction: row-reverse; }
+      .article-with-img-text .img-wrap,
+      .article-with-img-text .second-column {
         flex: 1; }
       .article-with-img-text .second-column {
         margin-left: 2rem; }
@@ -71,6 +74,55 @@ body {
 
 header {
   color: red; }
+
+.testimonial-item {
+  text-align: center;
+  background: #98262b;
+  padding: 20rem 2rem 15rem; }
+  @media screen and (min-width: 641px) {
+    .testimonial-item {
+      padding: 15rem 10rem; } }
+  .testimonial-item .content {
+    position: relative;
+    color: #fafafa; }
+    .testimonial-item .content p {
+      font-size: 28px;
+      line-height: 32px; }
+    .testimonial-item .content::before, .testimonial-item .content::after {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      width: 6rem;
+      height: 100%;
+      background-size: contain; }
+    .testimonial-item .content::before {
+      background-image: url("../assets/particles/quote-mark-left.svg");
+      top: -8rem;
+      left: 0; }
+    .testimonial-item .content::after {
+      background-image: url("../assets/particles/quote-mark-right.svg");
+      bottom: -94%;
+      right: 0; }
+    @media screen and (min-width: 641px) {
+      .testimonial-item .content {
+        max-width: 112rem;
+        margin: auto;
+        padding: 0 10rem; }
+        .testimonial-item .content p {
+          font-size: 3.4rem;
+          line-height: 3.8rem; }
+        .testimonial-item .content::before {
+          top: 0; }
+        .testimonial-item .content::after {
+          top: 0;
+          right: 0;
+          bottom: unset; } }
+  .testimonial-item .author {
+    text-align: center;
+    color: #fafafa;
+    margin-top: 3rem; }
+    .testimonial-item .author::before {
+      content: "- "; }
 
 .title-left-particle {
   position: relative;
