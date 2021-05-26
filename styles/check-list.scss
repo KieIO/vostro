@@ -1,0 +1,29 @@
+@import '../styles/variable.scss';
+.check-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .check-list-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        @include mq("tablet"){
+            max-width: 75%;
+        }
+        justify-content: center;
+        align-items: center;
+        .check-list-item{
+            font-style: italic;
+            font-weight: 400;
+            line-height: 3.8rem;
+            font-size:3.4rem;
+            &::before{
+                line-height: 3.8rem;
+                font-size:3.4rem;
+                font-weight: bold;
+                font-style: italic;
+                content: "\2713";
+            }
+        }
+    }
+}

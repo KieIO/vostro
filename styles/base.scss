@@ -1,4 +1,4 @@
-@import './variable.scss';
+@import "./variable.scss";
 
 * {
     margin: 0px;
@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
     /* => 1rem = 8px*/
     font-size: 50% !important;
-    @include mq('tablet') {
+    @include mq("tablet") {
         /* => 1rem = 10px*/
         font-size: 62.5% !important;
     }
@@ -21,8 +21,8 @@ body {
     box-sizing: border-box;
     font-size: $fontsize-paragraph;
     line-height: $lineheight-paragraph;
-    letter-spacing: 0.033rem;
+    letter-spacing: 0.01em;
     color: $color-primary;
     background: $color-white;
-    // font-family: 'Poppins', sans-serif;
+    font-family: $font-family;
 }
