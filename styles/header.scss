@@ -1,6 +1,9 @@
 @import "./variable.scss";
 
 header {
+  position: fixed;
+  width: 100%;
+  background-color: $color-white;
   .header-small {
     display: block;
     .header-top {

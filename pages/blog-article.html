@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Blog</title>
+    <title>Blog Article</title>
 </head>
 <body>
     <main>
@@ -68,42 +68,37 @@
               </div>
             </div>
         </header>
-        <section class="title-center u-first-section-page blog-title">
-            <h2 class="u-heading-2 title-main">
-                ADVICE TO HELP YOU GET AHEAD
-            </h2>
-        </section>
-        <section class="blog-filter u-section-padding"">
-            <div class="blog-filter-wrap">
-                <div class="label">Filter:</div>
-                <div class="filter-list">
-                    <select class="filter-select">
-                        <option>All</option>
-                        <option>Tuesday Tip</option>
-                        <option>Family First</option>
-                        <option>Success Stories</option>
-                        <option>Education</option>
-                    </select>
-                </div>
-            </div>
-        </section>
-        <section class="blog-list-article">
-            <button class="u-button u-button-primary">Load more articles</button>
+        <section class="blog-article-wrap u-first-section-page u-section-padding">
+          <div class="blog-article-title text-center">
+            THE CREDIT CARD TRAP
+          </div>
+          <div class="blog-article-actor">
+            <img src="../assets/images//user_1.png" class="avatar" alt="actor" />
+            BY JANAHAN KUMARALINGAM
+          </div>
+          <div class="blog-article-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio repellendus vel rem et nisi atque, odit iusto voluptatibus id doloribus ducimus dolorem quo quam dicta porro vitae sunt maxime!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem non cupiditate corporis sed minima exercitationem, mollitia cum, eligendi laborum sunt consectetur numquam quae asperiores officiis placeat unde quis aliquid. Minus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit laboriosam libero quis totam quod ipsam reiciendis commodi repellat praesentium voluptas nihil sapiente maxime consectetur quos dolorem iste, eius vero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Saepe fugit debitis pariatur, dicta nam illo? Omnis aperiam neque rem voluptas exercitationem, perferendis pariatur debitis dolorem, dolore officiis ratione!</p>
+          </div>
+          <div class="blog-article-btn-share">
+            <button class="u-button u-button-primary">Share this article</button>
+          </div>
         </section>
     </main>
 </body>
 <script>
-    function toogleSidebar() {
-      const eleSidebar = document.getElementsByClassName("header-sidebar")[0]
-      const eleHamburgerIcon = document.getElementsByClassName("hamburger-icon")[0]
+  function toogleSidebar() {
+    const eleSidebar = document.getElementsByClassName("header-sidebar")[0]
+    const eleHamburgerIcon = document.getElementsByClassName("hamburger-icon")[0]
 
-      if (eleSidebar.classList.contains("active")) {
-        eleSidebar.classList.remove("active")
-        eleHamburgerIcon.classList.remove("active")
-      } else {
-        eleSidebar.classList.add("active")
-        eleHamburgerIcon.classList.add("active")
-      }
+    if (eleSidebar.classList.contains("active")) {
+      eleSidebar.classList.remove("active")
+      eleHamburgerIcon.classList.remove("active")
+    } else {
+      eleSidebar.classList.add("active")
+      eleHamburgerIcon.classList.add("active")
     }
-  </script>
-</html>
+  }
+</script>
