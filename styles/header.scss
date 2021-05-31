@@ -1,3 +1,189 @@
+@import "./variable.scss";
+
 header {
-    color: red;
+  .header-small {
+    display: block;
+    .header-top {
+      background: $color-primary;
+      .top-text {
+        font-family: $font-family-1;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #faf9f7;
+        padding-top: 1rem;
+        padding-bottom: 0.9rem;
+        letter-spacing: 0.07em;
+      }
+    }
+    .header-bottom {
+      padding: 0 2rem;
+      display: flex;
+      border-bottom: 1px solid $color-primary;
+      overflow: hidden;
+      .header-logo {
+        padding-top: 1.7rem;
+        padding-bottom: 1.8rem;
+      }
+      .hamburger {
+        margin-left: auto;
+        padding-top: 1.7rem;
+        padding-bottom: 1.9rem;
+        .hamburger-icon {
+          display: inline-block;
+          margin: auto;
+          cursor: pointer;
+          transform: scale(.8);
+          -webkit-transform: scale(.8);
+          .bar-1,
+          .bar-2,
+          .bar-3 {
+            width: 25px;
+            height: 2px;
+            background-color: $color-primary;
+            transition: 0.4s;
+            -webkit-transition: 0.4s;
+            border-radius: $border-radius-sm;
+          }
+          .bar-2 {
+            margin: 0.75rem 0;
+          }
+          &.active {
+            .bar-1 {
+              -webkit-transform: rotate(-45deg) translate(-12px,1px);
+              transform: rotate(-45deg) translate(-12px,1px);
+            }
+            .bar-2 {
+              opacity: 0;
+            }
+            .bar-3 {
+              -webkit-transform: rotate(45deg) translate(-10px,0);
+              transform: rotate(45deg) translate(-10px,0);
+            }
+          }
+          
+        }
+        .header-sidebar {
+          position: absolute;
+          transform: translateX(100%);
+          right: 0;
+          top: 10rem;
+          width: 100%;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+          font-family: $font-family-1;
+          font-weight: 400;
+          font-style: normal;
+          font-style: 2.4rem;
+          line-height: 3rem;
+          letter-spacing: 0.01em;
+          z-index: 2000;
+          ul {
+            list-style: none;
+            &:first-child {
+              padding: 2.4rem 2rem;
+              border-bottom: 1px solid $color-primary;
+            }
+            &:nth-child(2) {
+              padding: 2.7rem 2rem 2.1rem;
+            }
+            &:last-child {
+              font-family: $font-family-2;
+              background-color: $color-primary;
+              color: $color-white;
+              padding: 4.4rem 2rem;
+            }
+          }
+          &.active {
+            transform: translateX(0);
+            transition:  all .3s;
+            -webkit-transition:  all .3s;
+          }
+        }
+      }
+    }
+  }
+  .header-large {
+    display: none;
+  }
+}
+
+@include mq("lap") {
+  header {
+    .header-small {
+      display: none;
+    }
+    .header-large {
+      display: block;
+      .header-top {
+        background: $color-primary;
+        .top-text {
+          font-family: $font-family-1;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.3rem;
+          line-height: 2rem;
+          text-align: center;
+          color: #faf9f7;
+          padding-top: 1rem;
+          padding-bottom: 0.9rem;
+          letter-spacing: 0.07em;
+        }
+      }
+      .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.3rem 4.5rem;
+        border: 1px solid $color-primary;
+        .header-logo {
+          &::before {
+            content: ' ';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+          }
+          img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .header-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .header-category {
+            .header-category-list {
+              display: flex;
+              list-style: none;
+              justify-content: center;
+              .header-category-item {
+                padding-left: 2rem;
+                font-family: $font-family-1;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 0.01em;
+              }
+            }
+            
+          }
+          .header-btn {
+            .u-button.u-button-ghost {
+              margin-left: 2rem;
+              padding: 0.5rem 3rem;
+              font-size: 1.5rem;
+              font-weight: 400;
+              font-style: normal;
+              line-height: 2.8rem;
+              letter-spacing: 0.02em;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }
