@@ -1,0 +1,32 @@
+@import "../styles/variable.scss";
+.video-thumbnail{
+    .video-thumbnail-wrap{
+        position: relative;
+        width: 65.2rem;
+        height: 62rem;
+        .video-play-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            position: absolute;
+            top: 4.3rem;
+            right: 4.5rem;
+            z-index: 100;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            border: 1px $color-primary solid;
+            font-size: 5rem;
+            img{
+                width: 2rem;
+                height: 2.8rem;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+           
+        }
+    }
+}

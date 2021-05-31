@@ -1,0 +1,16 @@
+@import "../styles/variable.scss";
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .description-content{
+        font-weight: 400;
+        line-height: 3.8rem;
+        font-size:3.4rem;
+        max-width: 85%;
+        text-align: center;
+        @include mq('tablet'){
+            max-width:75%
+        }
+    }
+}
