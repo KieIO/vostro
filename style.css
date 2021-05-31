@@ -342,25 +342,37 @@ header .header-large {
       position: absolute; }
 
 .u-heading-1 {
-  font-size: 6rem;
-  line-height: 6rem;
+  font-size: 40px;
+  line-height: 40px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 700; }
+  @media screen and (min-width: 641px) {
+    .u-heading-1 {
+      font-size: 60px;
+      line-height: 60px; } }
 
 .u-heading-2 {
-  font-size: 5rem;
-  line-height: 5.5rem;
+  font-size: 30px;
+  line-height: 35px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 700; }
+  @media screen and (min-width: 641px) {
+    .u-heading-2 {
+      font-size: 50px;
+      line-height: 55px; } }
 
 .u-heading-3 {
-  font-size: 2.6rem;
-  line-height: 3.6rem;
+  font-size: 22px;
+  line-height: 28px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   font-weight: 700; }
+  @media screen and (min-width: 641px) {
+    .u-heading-3 {
+      font-size: 26px;
+      line-height: 36px; } }
 
 .u-section-padding {
   padding-left: 4.5rem;
