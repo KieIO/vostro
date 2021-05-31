@@ -16,10 +16,12 @@
         <div class="logo">
           <img src="../assets/images/Logo.svg" />
         </div>
-        <div class="hamburger-icon">
-          <div class="bar-1"></div>
-          <div class="bar-2"></div>
-          <div class="bar-3"></div>
+        <div class="hamburger-icon-wrap">
+          <div class="hamburger-icon" onclick="toogleSidebar()">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </div>
         </div>
       </div>
       <div class="header-sidebar">
@@ -33,7 +35,25 @@
           <li>Your Portal</li>
           <li>Your Por</li>
         </ul>
+        <ul>
+          <li>hello@vostroprivate.com.au</li>
+          <li>Phone. 03 9867 4345</li>
+        </ul>
       </div>
     </header>
   </body>
+  <script>
+    function toogleSidebar() {
+      const eleSidebar = document.getElementsByClassName("header-sidebar")[0]
+      const eleHamburgerIcon = document.getElementsByClassName("hamburger-icon")[0]
+
+      if (eleSidebar.classList.contains("active")) {
+        eleSidebar.classList.remove("active")
+        eleHamburgerIcon.classList.remove("active")
+      } else {
+        eleSidebar.classList.add("active")
+        eleHamburgerIcon.classList.add("active")
+      }
+    }
+  </script>
 </html>
