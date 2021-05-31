@@ -58,10 +58,19 @@
     }
 }
 
-.home-banner-with-text-1 {
-    h1 {
+.home-page {
+    .home-banner-with-text-1 {
+        h1 {
+            @include mq("tablet") {
+                max-width: 500px;
+            }
+        }
+    }
+    
+    .home-title-get-ready {
         @include mq("tablet") {
-            max-width: 500px;
+            max-width: 65rem !important;
+            margin: auto;
         }
     }
 }

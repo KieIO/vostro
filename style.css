@@ -317,8 +317,13 @@ header .header-large {
            object-fit: cover; }
 
 @media screen and (min-width: 641px) {
-  .home-banner-with-text-1 h1 {
+  .home-page .home-banner-with-text-1 h1 {
     max-width: 500px; } }
+
+@media screen and (min-width: 641px) {
+  .home-page .home-title-get-ready {
+    max-width: 65rem !important;
+    margin: auto; } }
 
 .tag-buttons-list {
   display: flex;
