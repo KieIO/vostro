@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="header-small">
+              <div class="header-top">
+                <p class="top-text">READ OUR LATEST ARTICLE</p>
+              </div>
+              <div class="header-bottom">
+                <div class="header-logo">
+                  <img src="../assets/images/Logo.svg" />
+                </div>
+                <div class="hamburger">
+                  <div class="hamburger-icon" onclick="toogleSidebar()">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                  </div>
+                  <div class="header-sidebar">
+                    <ul>
+                      <li>About</li>
+                      <li>Approach</li>
+                      <li>Articles</li>
+                      <li>Accountants</li>
+                    </ul>
+                    <ul>
+                      <li>Your Portal</li>
+                      <li>Your Por</li>
+                    </ul>
+                    <ul>
+                      <li>hello@vostroprivate.com.au</li>
+                      <li>Phone. 03 9867 4345</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-large">
+              <div class="header-top">
+                <p class="top-text">READ OUR LATEST ARTICLE</p>
+              </div>
+              <div class="header-bottom">
+                <div class="header-logo">
+                  <img src="../assets/images/Logo.svg" />
+                </div>
+                <div class="header-right" >
+                    <div class="header-category">
+                      <ul class="header-category-list">
+                        <li class="header-category-item">About</li>
+                        <li class="header-category-item">Approach</li>
+                        <li class="header-category-item">Articles</li>
+                        <li class="header-category-item">Accountants</li>
+                      </ul>
+                    </div>
+                    <div class="header-btn">
+                      <button class="u-button u-button-ghost">Your Portal</button>
+                      <button class="u-button u-button-ghost">Your Porfolio</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </header>
+        <section class="title-center blog-title">
+            <h2 class="u-heading-2 title-main">
+                ADVICE TO HELP YOU GET AHEAD
+            </h2>
+        </section>
+        <section class="blog-filter u-section-padding"">
+            <div class="blog-filter-wrap">
+                <div class="label">Filter:</div>
+                <div class="filter-list">
+                    <select class="filter-select">
+                        <option>All</option>
+                        <option>Tuesday Tip</option>
+                        <option>Family First</option>
+                        <option>Success Stories</option>
+                        <option>Education</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="blog-list-article">
+            <button class="u-button u-button-primary">Load more articles</button>
+        </section>
+    </main>
+</body>
+<script>
+    function toogleSidebar() {
+      const eleSidebar = document.getElementsByClassName("header-sidebar")[0]
+      const eleHamburgerIcon = document.getElementsByClassName("hamburger-icon")[0]
+
+      if (eleSidebar.classList.contains("active")) {
+        eleSidebar.classList.remove("active")
+        eleHamburgerIcon.classList.remove("active")
+      } else {
+        eleSidebar.classList.add("active")
+        eleHamburgerIcon.classList.add("active")
+      }
+    }
+  </script>
+</html>
