@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
@@ -84,6 +79,147 @@ body {
   background: #fafafa;
   font-family: "Inter", sans-serif; }
 
+
+header .header-small {
+  display: block; }
+  header .header-small .header-top {
+    background: #98262b; }
+    header .header-small .header-top .top-text {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      text-align: center;
+      color: #faf9f7;
+      padding-top: 1rem;
+      padding-bottom: 0.9rem;
+      letter-spacing: 0.07em; }
+  header .header-small .header-bottom {
+    padding: 0 2rem;
+    display: flex;
+    border-bottom: 1px solid #98262b;
+    overflow: hidden; }
+    header .header-small .header-bottom .header-logo {
+      padding-top: 1.7rem;
+      padding-bottom: 1.8rem; }
+    header .header-small .header-bottom .hamburger {
+      margin-left: auto;
+      padding-top: 1.7rem;
+      padding-bottom: 1.9rem; }
+      header .header-small .header-bottom .hamburger .hamburger-icon {
+        display: inline-block;
+        margin: auto;
+        cursor: pointer;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8); }
+        header .header-small .header-bottom .hamburger .hamburger-icon .bar-1,
+        header .header-small .header-bottom .hamburger .hamburger-icon .bar-2,
+        header .header-small .header-bottom .hamburger .hamburger-icon .bar-3 {
+          width: 25px;
+          height: 2px;
+          background-color: #98262b;
+          transition: 0.4s;
+          -webkit-transition: 0.4s;
+          border-radius: 0.5rem; }
+        header .header-small .header-bottom .hamburger .hamburger-icon .bar-2 {
+          margin: 0.75rem 0; }
+        header .header-small .header-bottom .hamburger .hamburger-icon.active .bar-1 {
+          transform: rotate(-45deg) translate(-12px, 1px); }
+        header .header-small .header-bottom .hamburger .hamburger-icon.active .bar-2 {
+          opacity: 0; }
+        header .header-small .header-bottom .hamburger .hamburger-icon.active .bar-3 {
+          transform: rotate(45deg) translate(-10px, 0); }
+      header .header-small .header-bottom .hamburger .header-sidebar {
+        position: absolute;
+        transform: translateX(100%);
+        right: 0;
+        top: 10rem;
+        width: 100%;
+        transition: all .3s;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-style: 2.4rem;
+        line-height: 3rem;
+        letter-spacing: 0.01em;
+        z-index: 2000; }
+        header .header-small .header-bottom .hamburger .header-sidebar ul {
+          list-style: none; }
+          header .header-small .header-bottom .hamburger .header-sidebar ul:first-child {
+            padding: 2.4rem 2rem;
+            border-bottom: 1px solid #98262b; }
+          header .header-small .header-bottom .hamburger .header-sidebar ul:nth-child(2) {
+            padding: 2.7rem 2rem 2.1rem; }
+          header .header-small .header-bottom .hamburger .header-sidebar ul:last-child {
+            font-family: "Mrs Eaves XL Serif Nar OT", sans-serif;
+            background-color: #98262b;
+            color: #fafafa;
+            padding: 4.4rem 2rem; }
+        header .header-small .header-bottom .hamburger .header-sidebar.active {
+          transform: translateX(0);
+          transition: all .3s;
+          -webkit-transition: all .3s; }
+
+header .header-large {
+  display: none; }
+
+@media screen and (min-width: 1008px) {
+  header .header-small {
+    display: none; }
+  header .header-large {
+    display: block; }
+    header .header-large .header-top {
+      background: #98262b; }
+      header .header-large .header-top .top-text {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #faf9f7;
+        padding-top: 1rem;
+        padding-bottom: 0.9rem;
+        letter-spacing: 0.07em; }
+    header .header-large .header-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 2.3rem 4.5rem;
+      border: 1px solid #98262b; }
+      header .header-large .header-bottom .header-logo::before {
+        content: ' ';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%; }
+      header .header-large .header-bottom .header-logo img {
+        display: inline-block;
+        vertical-align: middle; }
+      header .header-large .header-bottom .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        header .header-large .header-bottom .header-right .header-category .header-category-list {
+          display: flex;
+          list-style: none;
+          justify-content: center; }
+          header .header-large .header-bottom .header-right .header-category .header-category-list .header-category-item {
+            padding-left: 2rem;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.01em; }
+        header .header-large .header-bottom .header-right .header-btn .u-button.u-button-ghost {
+          margin-left: 2rem;
+          padding: 0.5rem 3rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          font-style: normal;
+          line-height: 2.8rem;
+          letter-spacing: 0.02em;
+          text-align: center; } }
 .check-list {
   display: flex;
   justify-content: center;
@@ -122,9 +258,6 @@ body {
     @media screen and (min-width: 641px) {
       .description .description-content {
         max-width: 75%; } }
-
-header {
-  color: red; }
 
 .tag-buttons-list {
   display: flex;
