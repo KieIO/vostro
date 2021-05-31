@@ -3,18 +3,20 @@
 .banner-with-text {
     .img-wrap {
         border-radius: $border-radius;
+        margin-top: 4rem;
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    @include mq("tablet") {
+    @include mq("lap") {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         .img-wrap {
             margin-left: 2rem;
+            margin-top: 0;
         }
     }
 }
