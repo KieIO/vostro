@@ -29,6 +29,18 @@
     padding-right: 4.5rem;
 }
 
+.u-section-space-bottom {
+    padding-bottom: 15rem;
+}
+.u-section-space-top {
+    padding-top: 15rem;
+}
+.u-section-space-verticle {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+
 .u-first-section-page {
     padding-top: 4rem;
 }
@@ -82,3 +94,8 @@
         cursor: not-allowed;
     }
 }
+
+.u-border-bottom {
+    border-bottom: 1px solid $color-primary;
+}
+
