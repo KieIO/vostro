@@ -1,4 +1,10 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
@@ -75,6 +81,44 @@ body {
   background: #fafafa;
   font-family: "Inter", sans-serif; }
 
+.check-list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .check-list .check-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (min-width: 641px) {
+      .check-list .check-list-wrapper {
+        max-width: 75%; } }
+    .check-list .check-list-wrapper .check-list-item {
+      font-style: italic;
+      font-weight: 400;
+      line-height: 3.8rem;
+      font-size: 3.4rem; }
+      .check-list .check-list-wrapper .check-list-item::before {
+        line-height: 3.8rem;
+        font-size: 3.4rem;
+        font-weight: bold;
+        font-style: italic;
+        content: "\2713"; }
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .description .description-content {
+    font-weight: 400;
+    line-height: 3.8rem;
+    font-size: 3.4rem;
+    max-width: 85%;
+    text-align: center; }
+    @media screen and (min-width: 641px) {
+      .description .description-content {
+        max-width: 75%; } }
 
 header .header-small {
   display: block; }
@@ -216,44 +260,6 @@ header .header-large {
           line-height: 2.8rem;
           letter-spacing: 0.02em;
           text-align: center; } }
-.check-list {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .check-list .check-list-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80%;
-    justify-content: center;
-    align-items: center; }
-    @media screen and (min-width: 641px) {
-      .check-list .check-list-wrapper {
-        max-width: 75%; } }
-    .check-list .check-list-wrapper .check-list-item {
-      font-style: italic;
-      font-weight: 400;
-      line-height: 3.8rem;
-      font-size: 3.4rem; }
-      .check-list .check-list-wrapper .check-list-item::before {
-        line-height: 3.8rem;
-        font-size: 3.4rem;
-        font-weight: bold;
-        font-style: italic;
-        content: "\2713"; }
-
-.description {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .description .description-content {
-    font-weight: 400;
-    line-height: 3.8rem;
-    font-size: 3.4rem;
-    max-width: 85%;
-    text-align: center; }
-    @media screen and (min-width: 641px) {
-      .description .description-content {
-        max-width: 75%; } }
 
 .tag-buttons-list {
   display: flex;
@@ -370,6 +376,9 @@ header .header-large {
   padding: 1rem 3rem;
   cursor: pointer;
   transition: all 0.2s; }
+  .u-button a {
+    text-decoration: none;
+    color: currentColor; }
 
 .u-button-primary {
   background: #f6a300;
