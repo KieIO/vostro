@@ -300,6 +300,11 @@ header .header-large {
     max-width: 65rem !important;
     margin: auto; } }
 
+.home-page .blogs .tag-buttons-list {
+  margin-top: 6rem; }
+  .home-page .blogs .tag-buttons-list .tag-buttons-list-warpper {
+    max-width: 65rem; }
+
 .partners-slider {
   padding: 60px 0; }
   .partners-slider h3 {
@@ -464,7 +469,7 @@ header .header-large {
     position: relative;
     font-weight: bold;
     color: #98262b;
-    max-width: 75%;
+    max-width: 65.2rem;
     min-height: 15rem;
     display: flex;
     justify-content: center;

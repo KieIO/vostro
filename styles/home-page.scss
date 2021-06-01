@@ -43,4 +43,13 @@
             margin: auto;
         }
     }
+
+    .blogs {
+        .tag-buttons-list {
+            margin-top: 6rem;
+            .tag-buttons-list-warpper {
+                max-width: 65rem;
+            }
+        }
+    }
 }
