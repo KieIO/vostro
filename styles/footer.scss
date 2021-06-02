@@ -1,1 +1,99 @@
 @import "./variable.scss";
+
+footer {
+    display: block;
+    .footer-top{
+        .footer-contact{
+            font-family: Mrs Eaves XL Serif Nar OT;
+            font-style: italic;
+            font-size: 2.4rem;
+            color: $color-primary;
+            line-height: 3.2rem;
+            padding-left: 2rem;
+            padding-top: 4rem;
+            padding-bottom: 2.4rem;
+            letter-spacing: 0.07em;
+        }
+        ul{
+            li{
+                .footer-head-info{
+                    font-family: Inter;
+                    font-size: 1.3rem;
+                    color: $color-primary;
+                    line-height: 2rem;
+                    padding-left: 2rem;
+                    padding-bottom: 1.2rem;
+                    letter-spacing: 0.07em;
+                    text-transform: uppercase;
+                }
+                .footer-info{
+                    font-family: Inter;
+                    font-size: 1.6rem;
+                    color: $color-primary;
+                    line-height: 2.2rem;
+                    padding-left: 2rem;
+                    padding-bottom: 3rem;
+                    letter-spacing: 0.01em;
+                }
+            }
+        }
+
+    }
+    .burgundy{
+        background-color: $color-primary;
+        .burgundy-head{
+            font-family: Inter;
+            font-size: 1.3rem;
+            color: #FAFAFA;
+            line-height: 2rem;
+            padding-top: 3.6rem;
+            padding-left: 2rem;
+            padding-bottom: 1.6rem;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+        .burgundy-input{
+            background-color: #FAFAFA;
+            border: 0.1rem solid $color-primary;
+            box-sizing: border-box;
+            border-radius: 10rem;
+            margin-left: 2rem;
+            margin-right: 1.9rem;
+            margin-bottom: 4rem;
+            padding-right: 13.4rem;
+            padding-top: 0.9rem;
+            padding-left: 1.5rem;
+            padding-bottom: 0.8rem;
+        }
+        input[type="email"].burgundy-input::placeholder{
+            padding-left: 1.5rem;
+            font-family: Inter;
+            font-size: 1.3rem;
+            color: $color-primary;
+            line-height: 2.2rem;
+            letter-spacing: 0.01em;
+        }
+        .burgundy-input-arrow{
+            position: absolute;
+            top: 53.7rem;
+            left: 32.3rem;
+        }
+    }
+    .footer-bot{
+        ul{
+            li{
+                list-style-type: none;
+                float: left;
+                font-family: Inter;
+                font-size: 1.1rem;
+                color: $color-primary;
+                line-height: 1.4rem;
+                padding-top: 2rem;
+                padding-left: 2rem;
+                margin-right: 2rem;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
