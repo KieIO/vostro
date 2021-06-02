@@ -1,7 +1,8 @@
 @import "./variable.scss";
 
 .footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
     .footer-top{
         .footer-contact{
             font-family: Mrs Eaves XL Serif Nar OT;
@@ -9,7 +10,7 @@
             font-size: 3.5rem;
             color: $color-primary;
             line-height: 3.2rem;
-            padding-left: 2.5rem;
+            padding-left: 1.5rem;
             padding-top: 5rem;
             padding-bottom: 3rem;
         }
@@ -52,20 +53,23 @@
             letter-spacing: 0.0875em;
             text-transform: uppercase;
         }
-        .input-wrapper{
+        .footer-input-wrapper{
+            display: flex;
             position: relative;
-            margin-left: 2.5rem;
-            margin-right: 2.375rem;
+            // margin-left: 2.5rem;
+            margin: 0 2.2rem;
+            // margin-right: 2.375rem;
             padding-bottom: 5rem;
             &::after{
                 content: "\2192";
                 position: absolute;
-                top: 0.5rem;
-                right: 5.5rem;
-                font-size: 3rem;
+                top: 0.75rem;
+                right: 1.5rem;
+                font-size: 2rem;
             }
         }
         .burgundy-input{
+            width: 100%;
             background-color: #FAFAFA;
             border: 0.125rem solid $color-primary;
             box-sizing: border-box;
@@ -92,7 +96,11 @@
         }
     }
     .footer-bot{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         .footer-bot-list-1{
+            display: flex;
             li{
                 list-style-type: none;
                 font-family: Inter;
@@ -107,6 +115,8 @@
             }
         }
         .footer-bot-list-2{
+            display: flex;
+            flex-wrap: wrap;
             li{
                 list-style-type: none;
                 font-family: Inter;
@@ -124,9 +134,10 @@
 
     }
 }
-@include mq("tablet") {
+@include mq("lap") {
     .footer{
-        display: block;
+        display: flex;
+        flex-direction: column;
         .footer-top{
             .footer-contact{
                 float: left;
@@ -140,11 +151,17 @@
                 padding-bottom: 0rem;
                 letter-spacing: 0em;
             }
-            ul{
+            .ul-top{
                 list-style-type: none;
-                padding-left: 73.3rem;
+                display: flex;
+                justify-content: center;
+                // padding-left: 73.3rem;
                 li{
-                    margin-right: 4.6rem;
+                    // margin-right: 4.6rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
                     float: left;
                     .footer-head-info{
                         font-family: Inter;
@@ -184,27 +201,29 @@
                 letter-spacing: 0.07em;
                 text-transform: uppercase;
             }
-            .input-wrapper{
+            .footer-input-wrapper{
                 position: relative;
-                margin-top: 2.5rem;
-                margin-left: 1.2rem;
-                margin-right: 1.9rem;
+                padding-top: 2.5rem;
+                margin-right: 17rem;
+                padding-right: 0;
+                // margin-left: 1.2rem;
+                // margin-right: 1.9rem;
                 &::after{
                     content: "\2192";
                     position: absolute;
-                    top: 0.3rem;
-                    right: 10.5rem;
-                    font-size: 3rem;
+                    top: 3rem;
+                    right: 1.5rem;
+                    font-size: 2rem;
                 }
             }
             .burgundy-input{
 
-                width: auto;
+                width: 100%;
                 background-color: #FAFAFA;
                 border: 0.1rem solid $color-primary;
                 box-sizing: border-box;
                 border-radius: 10rem;
-               
+                // margin-top: 2.5rem;
                 padding-top: 1rem;
                 padding-left: 2.3rem;
                 padding-bottom: 1rem;
@@ -232,22 +251,22 @@
                         color: $color-primary;
                         line-height: 1.4rem;
                         padding-left: 2rem;
-                        margin-right: 2rem;
+                        margin-right: 0;
                         letter-spacing: 0.07em;
                         text-transform: uppercase;
                         padding-bottom: 0rem;
                     }
                 }
                 .footer-bot-list-2{
-                    padding-left: 73.3rem;
+                    // padding-left: 73.3rem;
                     li{
                         list-style-type: none;
                         font-family: Inter;
                         font-size: 1.1rem;
                         color: $color-primary;
                         line-height: 1.4rem;
-                        padding-left: 2rem;
-                        margin-right: 2rem;
+                        padding-left: 1rem;
+                        margin-right: 1rem;
                         letter-spacing: 0.07em;
                         text-transform: uppercase;
                         padding-bottom: 0rem;

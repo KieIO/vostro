@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .article-with-img-text {
   margin: auto; }
   .article-with-img-text .img-wrap {
@@ -127,6 +128,248 @@ body {
     @media screen and (min-width: 641px) {
       .description .description-content {
         max-width: 75%; } }
+
+.footer {
+  display: flex;
+  flex-direction: column; }
+  .footer .footer-top .footer-contact {
+    font-family: Mrs Eaves XL Serif Nar OT;
+    font-style: italic;
+    font-size: 3.5rem;
+    color: #98262b;
+    line-height: 3.2rem;
+    padding-left: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
+  .footer .footer-top ul li .footer-head-info {
+    font-family: Inter;
+    font-size: 1.625rem;
+    color: #98262b;
+    line-height: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 0.0875em;
+    text-transform: uppercase; }
+  .footer .footer-top ul li .footer-info {
+    font-family: Inter;
+    font-size: 2rem;
+    color: #98262b;
+    line-height: 2.75rem;
+    padding-left: 2.5rem;
+    padding-bottom: 3.75rem;
+    letter-spacing: 0.0125em; }
+  .footer .burgundy {
+    position: relative;
+    background-color: #98262b; }
+    .footer .burgundy .burgundy-head {
+      font-family: Inter;
+      font-size: 1.625rem;
+      color: #FAFAFA;
+      line-height: 2.5rem;
+      padding-top: 4.5rem;
+      padding-left: 2.5rem;
+      padding-bottom: 2rem;
+      letter-spacing: 0.0875em;
+      text-transform: uppercase; }
+    .footer .burgundy .footer-input-wrapper {
+      display: flex;
+      position: relative;
+      margin: 0 2.2rem;
+      padding-bottom: 5rem; }
+      .footer .burgundy .footer-input-wrapper::after {
+        content: "\2192";
+        position: absolute;
+        top: 0.75rem;
+        right: 1.5rem;
+        font-size: 2rem; }
+    .footer .burgundy .burgundy-input {
+      width: 100%;
+      background-color: #FAFAFA;
+      border: 0.125rem solid #98262b;
+      box-sizing: border-box;
+      border-radius: 12.5rem;
+      outline: none;
+      padding-right: 16.75rem;
+      padding-top: 1.125rem;
+      padding-left: 1.875rem;
+      padding-bottom: 1rem; }
+    .footer .burgundy input[type="email"].burgundy-input::-moz-placeholder {
+      font-family: Inter;
+      font-size: 1.625rem;
+      color: #98262b;
+      line-height: 2.75rem;
+      letter-spacing: 0.0125em; }
+    .footer .burgundy input[type="email"].burgundy-input:-ms-input-placeholder {
+      font-family: Inter;
+      font-size: 1.625rem;
+      color: #98262b;
+      line-height: 2.75rem;
+      letter-spacing: 0.0125em; }
+    .footer .burgundy input[type="email"].burgundy-input::placeholder {
+      font-family: Inter;
+      font-size: 1.625rem;
+      color: #98262b;
+      line-height: 2.75rem;
+      letter-spacing: 0.0125em; }
+    .footer .burgundy .burgundy-input-arrow {
+      position: absolute;
+      font-size: 2rem;
+      top: 9.8rem;
+      left: 37rem; }
+  .footer .footer-bot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .footer .footer-bot .footer-bot-list-1 {
+      display: flex; }
+      .footer .footer-bot .footer-bot-list-1 li {
+        list-style-type: none;
+        font-family: Inter;
+        font-size: 1.375rem;
+        color: #98262b;
+        line-height: 1.75rem;
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        margin-right: 2.5rem;
+        letter-spacing: 0.0875em;
+        text-transform: uppercase; }
+    .footer .footer-bot .footer-bot-list-2 {
+      display: flex;
+      flex-wrap: wrap; }
+      .footer .footer-bot .footer-bot-list-2 li {
+        list-style-type: none;
+        font-family: Inter;
+        float: left;
+        font-size: 1.375rem;
+        color: #98262b;
+        line-height: 1.75rem;
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        margin-right: 2.5rem;
+        letter-spacing: 0.0875em;
+        text-transform: uppercase; }
+
+@media screen and (min-width: 1008px) {
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer-top .footer-contact {
+      float: left;
+      font-family: Mrs Eaves XL Serif Nar OT;
+      font-style: italic;
+      font-size: 3.4rem;
+      color: #98262b;
+      line-height: 3.8rem;
+      padding-left: 4.5rem;
+      padding-top: 5rem;
+      padding-bottom: 0rem;
+      letter-spacing: 0em; }
+    .footer .footer-top .ul-top {
+      list-style-type: none;
+      display: flex;
+      justify-content: center; }
+      .footer .footer-top .ul-top li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        float: left; }
+        .footer .footer-top .ul-top li .footer-head-info {
+          font-family: Inter;
+          font-size: 1.3rem;
+          color: #98262b;
+          line-height: 2rem;
+          padding-top: 5rem;
+          padding-bottom: 1.2rem;
+          letter-spacing: 0.07em;
+          text-transform: uppercase; }
+        .footer .footer-top .ul-top li .footer-info {
+          font-family: Inter;
+          font-size: 1.6rem;
+          color: #98262b;
+          line-height: 2.2rem;
+          padding-top: 1.2rem;
+          letter-spacing: 0.01em; }
+    .footer .burgundy {
+      float: left;
+      width: 100%;
+      background-color: #98262b; }
+      .footer .burgundy .burgundy-head {
+        float: left;
+        width: 50%;
+        font-family: Inter;
+        font-size: 1.3rem;
+        color: #FAFAFA;
+        line-height: 2rem;
+        padding-top: 3.6rem;
+        padding-left: 4.5rem;
+        letter-spacing: 0.07em;
+        text-transform: uppercase; }
+      .footer .burgundy .footer-input-wrapper {
+        position: relative;
+        padding-top: 2.5rem;
+        margin-right: 17rem;
+        padding-right: 0; }
+        .footer .burgundy .footer-input-wrapper::after {
+          content: "\2192";
+          position: absolute;
+          top: 3rem;
+          right: 1.5rem;
+          font-size: 2rem; }
+      .footer .burgundy .burgundy-input {
+        width: 100%;
+        background-color: #FAFAFA;
+        border: 0.1rem solid #98262b;
+        box-sizing: border-box;
+        border-radius: 10rem;
+        padding-top: 1rem;
+        padding-left: 2.3rem;
+        padding-bottom: 1rem;
+        padding-right: 32.6rem; }
+      .footer .burgundy input[type="email"].burgundy-input::-moz-placeholder {
+        font-family: Inter;
+        font-size: 1.3rem;
+        color: #98262b;
+        line-height: 2.2rem;
+        letter-spacing: 0.01em; }
+      .footer .burgundy input[type="email"].burgundy-input:-ms-input-placeholder {
+        font-family: Inter;
+        font-size: 1.3rem;
+        color: #98262b;
+        line-height: 2.2rem;
+        letter-spacing: 0.01em; }
+      .footer .burgundy input[type="email"].burgundy-input::placeholder {
+        font-family: Inter;
+        font-size: 1.3rem;
+        color: #98262b;
+        line-height: 2.2rem;
+        letter-spacing: 0.01em; }
+      .footer .burgundy .burgundy-input-arrow {
+        position: absolute;
+        top: 19.6rem;
+        left: 120rem; }
+    .footer .footer-bot .footer-bot-list-1 li {
+      list-style-type: none;
+      font-family: Inter;
+      font-size: 1.1rem;
+      color: #98262b;
+      line-height: 1.4rem;
+      padding-left: 2rem;
+      margin-right: 0;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding-bottom: 0rem; }
+    .footer .footer-bot .footer-bot-list-2 li {
+      list-style-type: none;
+      font-family: Inter;
+      font-size: 1.1rem;
+      color: #98262b;
+      line-height: 1.4rem;
+      padding-left: 1rem;
+      margin-right: 1rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding-bottom: 0rem; } }
 
 header .header-small {
   display: block; }
