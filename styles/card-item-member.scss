@@ -1,11 +1,5 @@
-.cart-item-article {
+.card-item-member {
     max-width: 30rem;
-    .tag {
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-bottom: 1.1rem;
-    }
     .img-wrap {
         width: 100%;
         border-radius: 0.5rem;
@@ -26,8 +20,13 @@
     .title {
         margin: 2rem 0;
     }
-    .content {
-        margin: 0;
+    .position, .description {
         @extend .u-sub-text;
+    }
+    .position {
+        margin-bottom: 2rem;
+    }
+    .description {
+        margin: 0;
     }
 }

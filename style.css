@@ -247,6 +247,31 @@ body {
   .cart-item-article .content {
     margin: 0; }
 
+.card-item-member {
+  max-width: 30rem; }
+  .card-item-member .img-wrap {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 16rem; }
+    @media screen and (min-width: 641px) {
+      .card-item-member .img-wrap {
+        height: 20rem; } }
+    @media screen and (min-width: 1008px) {
+      .card-item-member .img-wrap {
+        height: 31rem; } }
+    .card-item-member .img-wrap img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem; }
+  .card-item-member .title {
+    margin: 2rem 0; }
+  .card-item-member .position {
+    margin-bottom: 2rem; }
+  .card-item-member .description {
+    margin: 0; }
+
 .check-list {
   display: flex;
   justify-content: center;
@@ -695,11 +720,20 @@ header {
   line-height: 24px;
   text-transform: uppercase;
   font-style: italic;
-  font-family: "Mrs Eaves XL Serif Nar OT", sans-serif; }
+  font-family: "Mrs Eaves XL Serif Nar OT", sans-serif;
+  font-weight: 400; }
   @media screen and (min-width: 641px) {
     .u-title-card {
       font-size: 28px;
       line-height: 30px; } }
+
+.u-sub-text, .cart-item-article .content, .card-item-member .position, .card-item-member .description {
+  font-size: 14px;
+  line-height: 20px; }
+  @media screen and (min-width: 641px) {
+    .u-sub-text, .cart-item-article .content, .card-item-member .position, .card-item-member .description {
+      font-size: 16px;
+      line-height: 22px; } }
 
 .u-section-padding {
   padding-left: 2.5rem;
