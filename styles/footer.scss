@@ -1,6 +1,6 @@
 @import "./variable.scss";
 
-footer {
+.footer {
     display: block;
     .footer-top{
         .footer-contact{
@@ -95,5 +95,125 @@ footer {
                 text-transform: uppercase;
             }
         }
+    }
+}
+@include mq("tablet") {
+    .footer{
+        display: block;
+        .footer-top{
+            .footer-contact{
+                float: left;
+                font-family: Mrs Eaves XL Serif Nar OT;
+                font-style: italic;
+                font-size: 3.4rem;
+                color: $color-primary;
+                line-height: 3.8rem;
+                padding-left: 4.5rem;
+                padding-top: 5rem;
+                padding-bottom: 0rem;
+                letter-spacing: 0em;
+            }
+            ul{
+                list-style-type: none;
+                padding-left: 73.3rem;
+                li{
+                    margin-right: 4.6rem;
+                    float: left;
+                    .footer-head-info{
+                        font-family: Inter;
+                        font-size: 1.3rem;
+                        color: $color-primary;
+                        line-height: 2rem;
+                        padding-top: 5rem;
+                        padding-bottom: 1.2rem;
+                        letter-spacing: 0.07em;
+                        text-transform: uppercase;
+                    }
+                    .footer-info{
+                        font-family: Inter;
+                        font-size: 1.6rem;
+                        color: $color-primary;
+                        line-height: 2.2rem;
+                        padding-top: 1.2rem;
+                        letter-spacing: 0.01em;
+                    }
+                }
+            }
+
+        }
+        .burgundy{
+            float: left;
+            width: 100%;
+            background-color: $color-primary;
+            .burgundy-head{
+                float: left;
+                width: 50%;
+                font-family: Inter;
+                font-size: 1.3rem;
+                color: #FAFAFA;
+                line-height: 2rem;
+                padding-top: 3.6rem;
+                padding-left: 4.5rem;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+            }
+            .burgundy-input{
+                width: auto;
+                background-color: #FAFAFA;
+                border: 0.1rem solid $color-primary;
+                box-sizing: border-box;
+                border-radius: 10rem;
+                margin-top: 2.5rem;
+                margin-left: 1.2rem;
+                margin-right: 1.9rem;
+                padding-top: 1rem;
+                padding-left: 2.3rem;
+                padding-bottom: 1rem;
+                padding-right: 32.6rem;
+            }
+            input[type="email"].burgundy-input::placeholder{
+                font-family: Inter;
+                font-size: 1.3rem;
+                color: $color-primary;
+                line-height: 2.2rem;
+                letter-spacing: 0.01em;
+            }
+            .burgundy-input-arrow{
+                position: absolute;
+                top: 19.6rem;
+                left: 120rem;
+            }
+        }
+        .footer-bot{
+                .footer-bot-list-1{
+                    li{
+                        list-style-type: none;
+                        font-family: Inter;
+                        font-size: 1.1rem;
+                        color: $color-primary;
+                        line-height: 1.4rem;
+                        padding-left: 2rem;
+                        margin-right: 2rem;
+                        letter-spacing: 0.07em;
+                        text-transform: uppercase;
+                        padding-bottom: 0rem;
+                    }
+                }
+                .footer-bot-list-2{
+                    padding-left: 73.3rem;
+                    li{
+                        list-style-type: none;
+                        font-family: Inter;
+                        font-size: 1.1rem;
+                        color: $color-primary;
+                        line-height: 1.4rem;
+                        padding-left: 2rem;
+                        margin-right: 2rem;
+                        letter-spacing: 0.07em;
+                        text-transform: uppercase;
+                        padding-bottom: 0rem;
+                    }
+                }
+            }
     }
 }
