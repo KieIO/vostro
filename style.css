@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .article-with-img-text {
   margin: auto; }
   .article-with-img-text .img-wrap {
@@ -472,15 +473,15 @@ header .header-large {
     max-width: 65.2rem;
     min-height: 15rem;
     display: flex;
+    width: 75%;
     justify-content: center;
     align-items: center;
     text-align: center; }
     .title-center .title-main::before {
       vertical-align: middle;
       top: 0;
-      left: -10rem;
+      left: -5rem;
       height: 100%;
-      width: 6rem;
       position: absolute;
       display: flex;
       align-items: center;
@@ -490,9 +491,8 @@ header .header-large {
       align-items: center;
       content: url("../assets/particles/particle-right-center.svg");
       top: 0;
-      right: -10rem;
+      right: -5rem;
       height: 100%;
-      width: 6rem;
       position: absolute; }
 
 .u-heading-1 {
@@ -588,6 +588,37 @@ header .header-large {
 .u-border-bottom {
   border-bottom: 1px solid #98262b; }
 
+.modal-video {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #f6a300;
+  padding: 8.5rem 16rem; }
+  .modal-video .modal-content {
+    margin: 0 auto;
+    background-color: #f6a300;
+    border: 1px solid #888;
+    width: 75%; }
+  .modal-video .close {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 4rem;
+    right: 4rem;
+    color: #000;
+    float: right;
+    font-size: 5rem;
+    font-weight: 100; }
+    .modal-video .close:hover, .modal-video .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer; }
+
 .video-thumbnail .video-thumbnail-wrap {
   position: relative;
   width: 65.2rem;
@@ -600,7 +631,7 @@ header .header-large {
     position: absolute;
     top: 4.3rem;
     right: 4.5rem;
-    z-index: 100;
+    z-index: 1;
     width: 6rem;
     height: 6rem;
     border-radius: 50%;

@@ -10,15 +10,19 @@
         max-width: 65.2rem;
         min-height: 15rem;
         display: flex;
+        width: 75%;
+        @include mq("tablet"){
+
+        }
         justify-content: center;
         align-items: center;
         text-align: center;
         &::before{        
             vertical-align:middle;
             top: 0;
-            left: -10rem;
+            left: -5rem;
             height: 100%;
-            width: 6rem;
+            // width: 6rem;
             position: absolute;
             display: flex;
             align-items: center;
@@ -29,9 +33,9 @@
             align-items: center;
             content: url('../assets/particles/particle-right-center.svg');
             top: 0;
-            right:-10rem;
+            right:-5rem;
             height: 100%;
-            width: 6rem;
+            // width: 6rem;
             position: absolute;
         }
     }
