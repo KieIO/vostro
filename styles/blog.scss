@@ -1,0 +1,69 @@
+@import './variable.scss';
+
+.blog-title {
+    padding-top: 20rem !important;
+    padding-bottom: 7.5rem;
+    .title-main {
+        max-width: 70% !important;
+        &::before {
+            left: -5rem !important;
+        }
+        &::after {
+            right: -5rem !important;
+        }
+        @include mq("lap") {
+            max-width: 46% !important;
+        }
+    }
+}
+.blog-filter {
+    @include mq("lap") {
+        display: none;
+    }
+    .blog-filter-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .label {
+            font-family: $font-family-1;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.02em;
+            padding-right: 2rem;
+        }
+        .filter-list {
+            width: 100%;
+            .filter-select {
+                width: 100%;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                letter-spacing: 0.02em;
+                color: $color-primary;
+                border-radius: 20rem;
+                padding: 1rem 1.5rem 1rem 2rem;
+                background: url("../assets/images/icon_arrow_dropdown.svg") no-repeat right;
+                background-origin: content-box;
+                -webkit-appearance: none;
+                &:focus {
+                    outline: none;
+                }
+                background-color: $color-white;
+                border: 1px solid $color-primary;
+                option {
+                    &:checked {
+                        background-color: $color-primary !important;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-list-article {
+    text-align: center;
+    margin-top: 7.4rem;
+    margin-bottom: 8rem;
+}

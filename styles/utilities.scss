@@ -37,8 +37,12 @@
 }
 
 .u-section-padding {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    @include mq("desk") { 
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
 }
 
 .u-section-space-bottom {
@@ -54,7 +58,7 @@
 
 
 .u-first-section-page {
-    padding-top: 4rem;
+    padding-top: 10rem;
 }
 
 .u-button {
@@ -111,7 +115,10 @@
     }
 }
 
+.text-center {
+    text-align: center;
+}
+
 .u-border-bottom {
     border-bottom: 1px solid $color-primary;
 }
-
