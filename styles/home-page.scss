@@ -36,7 +36,7 @@
             }
         }
     }
-    
+
     .home-title-get-ready {
         @include mq("tablet") {
             max-width: 65rem !important;
@@ -49,6 +49,12 @@
             margin-top: 6rem;
             .tag-buttons-list-warpper {
                 max-width: 65rem;
+            }
+        }
+        .blogs-list-wrap {
+            padding-top: 7.5rem;
+            @include mq("tablet") {
+                padding-top: 6rem;
             }
         }
     }

@@ -70,7 +70,7 @@
 
 
 .u-first-section-page {
-    padding-top: 10rem;
+    padding-top: calc(10rem + 6rem); // + header height
 }
 
 .u-button {
