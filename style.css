@@ -218,6 +218,10 @@ body {
   margin-top: 7.4rem;
   margin-bottom: 8rem; }
 
+.blogs-list-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
 .cart-item-article {
   max-width: 30rem; }
   .cart-item-article .tag {
