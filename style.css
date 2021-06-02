@@ -228,7 +228,8 @@ body {
   margin: auto;
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
-  padding: 0 2.5rem; }
+  padding: 0 2.5rem;
+  list-style: none; }
   .blogs-list .cart-item-article:nth-child(2n + 1) {
     padding-right: 1.25rem;
     border-right: 1px solid #98262b; }
@@ -502,6 +503,12 @@ header {
   margin-top: 6rem; }
   .home-page .blogs .tag-buttons-list .tag-buttons-list-warpper {
     max-width: 65rem; }
+
+.home-page .blogs .blogs-list-wrap {
+  padding-top: 7.5rem; }
+  @media screen and (min-width: 641px) {
+    .home-page .blogs .blogs-list-wrap {
+      padding-top: 6rem; } }
 
 .partners-slider {
   padding: 60px 0; }
