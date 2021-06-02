@@ -5,6 +5,7 @@
         width: 65.2rem;
         height: 62rem;
         .video-play-button{
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -12,7 +13,7 @@
             position: absolute;
             top: 4.3rem;
             right: 4.5rem;
-            z-index: 100;
+            z-index: 1;
             width: 6rem;
             height: 6rem;
             border-radius: 50%;
