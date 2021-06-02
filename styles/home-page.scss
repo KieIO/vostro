@@ -29,6 +29,7 @@
 }
 
 .home-page {
+    overflow-x: hidden;
     .home-banner-with-text-1 {
         h1 {
             @include mq("tablet") {

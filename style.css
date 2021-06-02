@@ -503,25 +503,24 @@ header {
         -o-object-fit: cover;
            object-fit: cover; }
 
-@media screen and (min-width: 641px) {
-  .home-page .home-banner-with-text-1 h1 {
-    max-width: 500px; } }
-
-@media screen and (min-width: 641px) {
-  .home-page .home-title-get-ready {
-    max-width: 65rem !important;
-    margin: auto; } }
-
-.home-page .blogs .tag-buttons-list {
-  margin-top: 6rem; }
-  .home-page .blogs .tag-buttons-list .tag-buttons-list-warpper {
-    max-width: 65rem; }
-
-.home-page .blogs .blogs-list-wrap {
-  padding-top: 7.5rem; }
+.home-page {
+  overflow-x: hidden; }
   @media screen and (min-width: 641px) {
-    .home-page .blogs .blogs-list-wrap {
-      padding-top: 6rem; } }
+    .home-page .home-banner-with-text-1 h1 {
+      max-width: 500px; } }
+  @media screen and (min-width: 641px) {
+    .home-page .home-title-get-ready {
+      max-width: 65rem !important;
+      margin: auto; } }
+  .home-page .blogs .tag-buttons-list {
+    margin-top: 6rem; }
+    .home-page .blogs .tag-buttons-list .tag-buttons-list-warpper {
+      max-width: 65rem; }
+  .home-page .blogs .blogs-list-wrap {
+    padding-top: 7.5rem; }
+    @media screen and (min-width: 641px) {
+      .home-page .blogs .blogs-list-wrap {
+        padding-top: 6rem; } }
 
 .member-list {
   display: grid;
