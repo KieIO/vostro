@@ -1,6 +1,7 @@
 @import "../styles/variable.scss";
 
 .banner-with-text {
+    overflow: hidden;
     .title {
         max-width: 54rem;
     }
