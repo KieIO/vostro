@@ -39,6 +39,7 @@
 
     }
     .burgundy{
+        position: relative;
         background-color: $color-primary;
         .burgundy-head{
             font-family: Inter;
@@ -51,21 +52,32 @@
             letter-spacing: 0.0875em;
             text-transform: uppercase;
         }
+        .input-wrapper{
+            position: relative;
+            margin-left: 2.5rem;
+            margin-right: 2.375rem;
+            padding-bottom: 5rem;
+            &::after{
+                content: "\2192";
+                position: absolute;
+                top: 0.5rem;
+                right: 5.5rem;
+                font-size: 3rem;
+            }
+        }
         .burgundy-input{
             background-color: #FAFAFA;
             border: 0.125rem solid $color-primary;
             box-sizing: border-box;
             border-radius: 12.5rem;
-            margin-left: 2.5rem;
-            margin-right: 2.375rem;
-            margin-bottom: 5rem;
+            outline: none;
             padding-right: 16.75rem;
             padding-top: 1.125rem;
             padding-left: 1.875rem;
             padding-bottom: 1rem;
         }
         input[type="email"].burgundy-input::placeholder{
-            padding-left: 1.875rem;
+            
             font-family: Inter;
             font-size: 1.625rem;
             color: $color-primary;
@@ -74,8 +86,9 @@
         }
         .burgundy-input-arrow{
             position: absolute;
-            top: 67.125rem;
-            left: 40.375rem;
+            font-size: 2rem;
+            top: 9.8rem;
+            left: 37rem;
         }
     }
     .footer-bot{
@@ -171,15 +184,27 @@
                 letter-spacing: 0.07em;
                 text-transform: uppercase;
             }
+            .input-wrapper{
+                position: relative;
+                margin-top: 2.5rem;
+                margin-left: 1.2rem;
+                margin-right: 1.9rem;
+                &::after{
+                    content: "\2192";
+                    position: absolute;
+                    top: 0.3rem;
+                    right: 10.5rem;
+                    font-size: 3rem;
+                }
+            }
             .burgundy-input{
+
                 width: auto;
                 background-color: #FAFAFA;
                 border: 0.1rem solid $color-primary;
                 box-sizing: border-box;
                 border-radius: 10rem;
-                margin-top: 2.5rem;
-                margin-left: 1.2rem;
-                margin-right: 1.9rem;
+               
                 padding-top: 1rem;
                 padding-left: 2.3rem;
                 padding-bottom: 1rem;
