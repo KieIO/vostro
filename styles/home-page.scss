@@ -1,0 +1,55 @@
+@import "./variable.scss";
+
+.accreditation {
+    padding: 60px 20px;
+    @include mq("tablet") {
+        padding: 100px 20px;
+    }
+    h3 {
+        text-align: center;
+    }
+    .items {
+        list-style: none;
+        @include mq("tablet") {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            padding: 0 40px;
+            margin-top: 50px;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+            &:not(:last-child) {
+            }
+        }
+    }
+}
+
+.home-page {
+    .home-banner-with-text-1 {
+        h1 {
+            @include mq("tablet") {
+                max-width: 500px;
+            }
+        }
+    }
+    
+    .home-title-get-ready {
+        @include mq("tablet") {
+            max-width: 65rem !important;
+            margin: auto;
+        }
+    }
+
+    .blogs {
+        .tag-buttons-list {
+            margin-top: 6rem;
+            .tag-buttons-list-warpper {
+                max-width: 65rem;
+            }
+        }
+    }
+}

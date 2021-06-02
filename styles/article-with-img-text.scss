@@ -1,4 +1,4 @@
-@import '../styles/variable.scss';
+@import "../styles/variable.scss";
 
 .article-with-img-text {
     margin: auto;
@@ -29,13 +29,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .img-wrap, .second-column {
+        &.revert {
+            flex-direction: row-reverse;
+        }
+        .img-wrap,
+        .second-column {
             flex: 1;
         }
         .second-column {
-            margin-left: 2rem;
             .content-article {
-                max-width: 60rem;
+                max-width: 42rem;
                 margin: auto;
             }
         }
