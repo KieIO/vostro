@@ -1,6 +1,9 @@
 @import "./variable.scss";
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   .header-small {
     display: block;
     .header-top {
@@ -66,10 +69,11 @@ header {
           
         }
         .header-sidebar {
+          background-color: $color-white;
           position: absolute;
           transform: translateX(100%);
           right: 0;
-          top: 10rem;
+          top: 11rem;
           width: 100%;
           -webkit-transition: all .3s;
           transition: all .3s;
