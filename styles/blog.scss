@@ -3,6 +3,9 @@
 .blog-title {
   padding-top: 20rem !important;
   padding-bottom: 7.5rem;
+  @include mq("tablet") {
+    padding-bottom: 10rem;
+  }
   .title-main {
     max-width: 70% !important;
     &::before {
@@ -17,7 +20,8 @@
   }
 }
 .blog-filter {
-  @include mq("lap") {
+  margin-bottom: 10rem;
+  @include mq("tablet") {
     display: none;
   }
   .blog-filter-wrap {
@@ -63,13 +67,7 @@
   }
 }
 
-.blog-list-article {
+.btn-show-more-blog {
   text-align: center;
-  margin-top: 7.4rem;
-  margin-bottom: 8rem;
-}
-
-.blogs-list-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  margin-top: 10rem;
 }
