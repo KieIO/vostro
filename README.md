@@ -11,3 +11,4 @@ Set up:
     + yarn scss: add prefix, compile scss to css
 
 Figma design: https://www.figma.com/file/P1VPmITvffewsr9eVuduyz/Vostro?node-id=0%3A1
+(Editable version: https://www.figma.com/file/P1VPmITvffewsr9eVuduyz/Vostro?node-id=124%3A4)
