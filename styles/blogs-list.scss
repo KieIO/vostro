@@ -1,0 +1,42 @@
+@import "../styles/variable.scss";
+
+.blogs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin: auto;
+    column-gap: 1.25rem;
+    padding: 0 2.5rem;
+    .cart-item-article {
+        &:nth-child(2n + 1) {
+            padding-right: 1.25rem;
+            border-right: 1px solid $color-primary;
+        }
+        &:nth-child(n + 3) {
+            padding-top: 5rem;
+        }
+    }
+    @include mq("tablet") {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        padding: 0 4.5rem;
+        .cart-item-article {
+            border-right: 1px solid $color-primary;
+            padding-top: 0;
+            &:nth-child(2n + 1) {
+                padding-right: 2rem;
+            }
+            padding-right: 2rem;
+            &:nth-child(4n) {
+                border: none;
+                padding-right: 0;
+            }
+            &:nth-child(n + 3) {
+                padding-top: 0;
+            }
+            &:nth-child(n + 5) {
+                padding-top: 5rem;
+            }
+        }
+    }
+}
