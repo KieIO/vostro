@@ -460,7 +460,7 @@ header {
       display: flex;
       justify-content: space-between;
       padding: 2.3rem 4.5rem;
-      border: 1px solid #98262b; }
+      border-bottom: 1px solid #98262b; }
       header .header-large .header-bottom .header-logo::before {
         content: " ";
         display: inline-block;

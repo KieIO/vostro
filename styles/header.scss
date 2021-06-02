@@ -139,7 +139,7 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 2.3rem 4.5rem;
-        border: 1px solid $color-primary;
+        border-bottom: 1px solid $color-primary;
         .header-logo {
           &::before {
             content: " ";
