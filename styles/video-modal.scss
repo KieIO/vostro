@@ -11,12 +11,28 @@
 	// background-color: rgb(0,0,0);
 	// background-color: rgba(0,0,0,0.4);
 	background-color: $color-primary-2;
-    padding: 8.5rem 16rem;
+    // padding: 8.5rem 16rem;
 	.modal-content {
         margin: 0 auto;
 		background-color: $color-primary-2;
 		border: 1px solid #888;
-		width: 75%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		iframe{
+			width: 95vw;
+			height: 30vh;
+			@include mq("lap"){
+				width: 100%;
+				height: 100%;
+			}
+		}
+		@include mq("lap"){
+			padding: 8.5rem 16rem;
+		}
 		// height: 80rem;
 	}
 	.close {

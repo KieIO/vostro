@@ -3,6 +3,7 @@
 .footer {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid $color-primary;
     .footer-top{
         .footer-contact{
             font-family: Mrs Eaves XL Serif Nar OT;
@@ -99,6 +100,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
         .footer-bot-list-1{
             display: flex;
             li{
@@ -107,7 +110,7 @@
                 font-size: 1.375rem;
                 color: $color-primary;
                 line-height: 1.75rem;
-                padding-top: 2.5rem;
+                // padding-top: 2.5rem;
                 padding-left: 2.5rem;
                 margin-right: 2.5rem;
                 letter-spacing: 0.0875em;
@@ -124,7 +127,7 @@
                 font-size: 1.375rem;
                 color: $color-primary;
                 line-height: 1.75rem;
-                padding-top: 2.5rem;
+                // padding-top: 2.5rem;
                 padding-left: 2.5rem;
                 margin-right: 2.5rem;
                 letter-spacing: 0.0875em;
@@ -140,6 +143,7 @@
         flex-direction: column;
         .footer-top{
             .footer-contact{
+                width: 50%;
                 float: left;
                 font-family: Mrs Eaves XL Serif Nar OT;
                 font-style: italic;
@@ -154,8 +158,8 @@
             .ul-top{
                 list-style-type: none;
                 display: flex;
-                justify-content: center;
-                // padding-left: 73.3rem;
+                justify-content: space-between;
+                padding-right: 17rem;
                 li{
                     // margin-right: 4.6rem;
                     display: flex;

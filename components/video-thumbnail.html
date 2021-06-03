@@ -12,46 +12,17 @@
     <section class="video-thumbnail" id="video-thumbnail">
         <div class="video-thumbnail-wrap">
             <img src="../assets/images/banner1.png" alt="image">
-            <div class="video-play-button">
+            <div class="video-play-button" onclick="onOpenModal(this.dataset.link)" data-link="https://www.youtube.com/embed/vmtumt8cv8c">
                 <img src="../assets/particles/play.svg" alt="play">
             </div>
         </div>
     </section>
     <section class="modal-video" id="video-modal">
         <div class="modal-content" id="modal-content">
-            <!-- <iframe width="900" height="506" src="https://www.youtube.com/embed/vmtumt8cv8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <iframe id="iframe-video-modal" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <span class="close">&times;</span>
     </section>
-    <script>
-		// Get the modal
-		var modal = document.getElementById("video-modal");
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("video-thumbnail");
-		var content = document.getElementById("modal-content");
-		// Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on the button, open the modal
-        btn.onclick = function () {
-            modal.style.display = "block";
-            content.innerHTML= `<iframe width="900" height="506" src="https://www.youtube.com/embed/vmtumt8cv8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-		};
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function () {
-			modal.style.display = "none";
-            content.innerHTML=""
-
-		};
-
-		// When the user clicks anywhere outside of the modal, close it
-		// window.onclick = function (event) {
-		// 	if (event.target == modal) {
-		// 		modal.style.display = "none";
-		// 	}
-		// };
-	</script>
+    <script src="../js/modal-video.js"></script>
 </body>
 </html>

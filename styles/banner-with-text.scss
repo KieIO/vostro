@@ -1,6 +1,10 @@
 @import "../styles/variable.scss";
 
 .banner-with-text {
+    overflow: hidden;
+    .title {
+        max-width: 54rem;
+    }
     .img-wrap {
         border-radius: $border-radius;
         margin-top: 4rem;
