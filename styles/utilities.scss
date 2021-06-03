@@ -42,12 +42,21 @@
     text-transform: uppercase;
     font-style: italic;
     font-family: $font-family-2;
+    font-weight: 400;
     @include mq("tablet") {
         font-size: 28px;
         line-height: 30px;
     }
 }
 
+.u-sub-text {
+    font-size: 14px;
+    line-height: 20px;
+    @include mq("tablet") {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
 .u-section-padding {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -70,7 +79,7 @@
 
 
 .u-first-section-page {
-    padding-top: 10rem;
+    padding-top: calc(10rem + 6rem); // + header height
 }
 
 .u-button {

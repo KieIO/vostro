@@ -66,6 +66,12 @@
 						line-height: 3.8rem;
 					}
 				}
+				.card-button{
+					margin-top: 2.5rem;
+					// width: 17rem;
+					// height: 3rem;
+					// font-size: 13px;
+				}
 			}
 			&:nth-child(2n + 0) .cart-item-article .img-wrap::after {
 				content: "" ;
