@@ -8,8 +8,7 @@
     <title>Accountants</title>
 </head>
 <body>
-    <main>
-        <header class="header">
+    <header class="header">
             <div class="header-small">
             <div class="header-top">
                 <p class="top-text">READ OUR LATEST ARTICLE</p>
@@ -67,22 +66,30 @@
                 </div>
             </div>
             </div>
-        </header>
-        <section class="banner-with-text u-first-section-page u-section-padding">
-            <h1 class="u-heading-1 title-left-particle">ACCOUNTING PARTNERS</h1>
+    </header>
+    <main class="page-about">
+        <section class="banner-with-text u-first-section-page u-section-padding u-section-space-bottom page-banner-with-text-1">
+            <h1 class="title u-heading-1 title-left-particle">ACCOUNTING PARTNERS</h1>
             <figure class="img-wrap">
                 <img src="../assets/images/Sieva_2.png" alt="">
             </figure>
         </section>
-        <section class="description u-first-section-page">
+
+        <section class="description">
             <div class="description-content">
                 We understand that <u>enjoying our work</u> is as much about the people we work with, as it is about the <u>difference we make to livelihoods.</u> 
             </div>
         </section>
-        <section class="article-with-img-text u-first-section-page u-section-padding">
-            <figure class="img-wrap">
-                <img src="../assets/images/pexels-anna-shvets-1.png" alt="">
-            </figure>
+
+        <section class="article-with-img-text u-first-section-page u-section-padding u-section-space-bottom">
+            <section class="video-thumbnail">
+                <div class="video-thumbnail-wrap">
+                    <img src="../assets/images/pexels-anna-shvets-1.png" alt="image" />
+                    <div class="video-play-button">
+                    <img src="../assets/particles/play.svg" alt="play" />
+                    </div>
+                </div>
+            </section>
             <div class="second-column">
                 <article class="content-article">
                     <h2 class="u-heading-3">A COMMON VISION</h2>
@@ -93,12 +100,12 @@
                 </article>
             </div>
         </section>
-        <section class="title-center u-first-section-page">
+        <section class="title-center u-section-space-bottom">
             <h2 class="u-heading-2 title-main">
                 Our partnerships prosper because:
             </h2>
         </section>
-        <section class="check-list blog-title">
+        <section class="check-list u-section-space-bottom">
             <div class="check-list-wrapper">
                 <span class="check-list-item">
                     We provide wealth training for your team
@@ -111,9 +118,8 @@
                 </span>
             </div>
         </section>
-        <br class="u-first-section-page">
-        <hr>
-        <footer class="footer">
+    </main>
+    <footer class="footer">
             <div class="footer-top">
                 <div class="footer-contact">
                     <p>Hello@vostroprivate.com.au</p>
@@ -170,8 +176,8 @@
                     <li>PRIVACY POLICY</li>
                 </ul>
             </div>
-        </footer>
-    </main>
+    </footer>
+    
     <script>
         function toogleSidebar() {
           const eleSidebar = document.getElementsByClassName("header-sidebar")[0]
