@@ -1,6 +1,6 @@
 @import "./variable.scss";
 
-header {
+.header {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -87,6 +87,16 @@ header {
       z-index: 2000;
       ul {
         list-style: none;
+        li {
+          padding-bottom: 1.75rem;
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $color-primary;
+        }
         &:first-child {
           padding: 2.4rem 2rem;
           border-bottom: 1px solid $color-primary;
@@ -114,7 +124,7 @@ header {
 }
 
 @include mq("lap") {
-  header {
+  .header {
     .header-small {
       display: none;
     }
@@ -162,6 +172,13 @@ header {
               list-style: none;
               justify-content: center;
               .header-category-item {
+                a {
+                  text-decoration: none;
+                  color: $color-primary;
+                }
+                span {
+                  border-bottom: 1px solid $color-primary;
+                }
                 padding-left: 2rem;
                 font-family: $font-family-1;
                 font-weight: 400;
