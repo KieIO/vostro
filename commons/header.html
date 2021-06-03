@@ -15,7 +15,9 @@
         </div>
         <div class="header-bottom">
           <div class="header-logo">
-            <img src="../assets/images/Logo.svg" />
+            <a href="/">
+              <img src="../assets/images/Logo.svg" />
+            </a>
           </div>
           <div class="hamburger">
             <div class="hamburger-icon" onclick="toogleSidebar()">
@@ -27,14 +29,14 @@
         </div>
         <div class="header-sidebar">
           <ul>
-            <li>About</li>
-            <li>Approach</li>
-            <li>Articles</li>
-            <li>Accountants</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="approach.html">Approach</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="accountant.html">Accountants</a></li>
           </ul>
           <ul>
             <li>Your Portal</li>
-            <li>Your Por</li>
+            <li>Your Portfolio</li>
           </ul>
           <ul>
             <li>hello@vostroprivate.com.au</li>
@@ -48,38 +50,35 @@
         </div>
         <div class="header-bottom">
           <div class="header-logo">
-            <img src="../assets/images/Logo.svg" />
+            <a href="/">
+              <img src="../assets/images/Logo.svg" />
+            </a>
           </div>
-          <div class="header-right" >
-              <div class="header-category">
-                <ul class="header-category-list">
-                  <li class="header-category-item">About</li>
-                  <li class="header-category-item">Approach</li>
-                  <li class="header-category-item">Articles</li>
-                  <li class="header-category-item">Accountants</li>
-                </ul>
-              </div>
-              <div class="header-btn">
-                <button class="u-button u-button-ghost">Your Portal</button>
-                <button class="u-button u-button-ghost">Your Porfolio</button>
-              </div>
+          <div class="header-right">
+            <div class="header-category">
+              <ul class="header-category-list">
+                <li class="header-category-item">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="header-category-item">
+                  <a href="approach.html">Approach</a>
+                </li>
+                <li class="header-category-item">
+                  <a href="articles.html">Articles</a>
+                </li>
+                <li class="header-category-item">
+                  <a href="accountant.html">Accountants</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-btn">
+              <button class="u-button u-button-ghost">Your Portal</button>
+              <button class="u-button u-button-ghost">Your Porfolio</button>
+            </div>
           </div>
         </div>
       </div>
     </header>
   </body>
-  <script>
-    function toogleSidebar() {
-      const eleSidebar = document.getElementsByClassName("header-sidebar")[0]
-      const eleHamburgerIcon = document.getElementsByClassName("hamburger-icon")[0]
-
-      if (eleSidebar.classList.contains("active")) {
-        eleSidebar.classList.remove("active")
-        eleHamburgerIcon.classList.remove("active")
-      } else {
-        eleSidebar.classList.add("active")
-        eleHamburgerIcon.classList.add("active")
-      }
-    }
-  </script>
+  <script type="text/javascript" src="../js/header.js"></script>
 </html>
