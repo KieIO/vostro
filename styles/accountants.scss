@@ -1,0 +1,26 @@
+@import "./variable.scss";
+
+.page-about{
+    .page-banner-with-text-1{
+        h1 {
+            @include mq("tablet") {
+                max-width: 500px;
+            }
+        }
+    }
+    .title-center{
+        h2{
+            @include mq("tablet"){
+                padding: 50px;
+            }
+        }
+        padding-bottom: 50px;
+    }
+    .check-list{
+        .check-list-wrapper{
+            .check-list-item{
+                text-align: center;
+            }
+        }
+    }
+}

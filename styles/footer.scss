@@ -6,7 +6,7 @@
     border-top: 1px solid $color-primary;
     .footer-top{
         .footer-contact{
-            font-family: Mrs Eaves XL Serif Nar OT;
+            font-family: $font-family-2;
             font-style: italic;
             font-size: 3.5rem;
             color: $color-primary;
@@ -18,7 +18,7 @@
         ul{
             li{
                 .footer-head-info{
-                    font-family: Inter;
+                    font-family: $font-family-1;
                     font-size: 1.625rem;
                     color: $color-primary;
                     line-height: 2.5rem;
@@ -28,7 +28,7 @@
                     text-transform: uppercase;
                 }
                 .footer-info{
-                    font-family: Inter;
+                    font-family: $font-family-1;
                     font-size: 2rem;
                     color: $color-primary;
                     line-height: 2.75rem;
@@ -44,7 +44,7 @@
         position: relative;
         background-color: $color-primary;
         .burgundy-head{
-            font-family: Inter;
+            font-family: $font-family-1;
             font-size: 1.625rem;
             color: #FAFAFA;
             line-height: 2.5rem;
@@ -57,9 +57,7 @@
         .footer-input-wrapper{
             display: flex;
             position: relative;
-            // margin-left: 2.5rem;
             margin: 0 2.2rem;
-            // margin-right: 2.375rem;
             padding-bottom: 5rem;
             &::after{
                 content: "\2192";
@@ -83,7 +81,7 @@
         }
         input[type="email"].burgundy-input::placeholder{
             
-            font-family: Inter;
+            font-family: $font-family-1;
             font-size: 1.625rem;
             color: $color-primary;
             line-height: 2.75rem;
@@ -106,7 +104,7 @@
             display: flex;
             li{
                 list-style-type: none;
-                font-family: Inter;
+                font-family: $font-family-1;
                 font-size: 1.375rem;
                 color: $color-primary;
                 line-height: 1.75rem;
@@ -122,7 +120,7 @@
             flex-wrap: wrap;
             li{
                 list-style-type: none;
-                font-family: Inter;
+                font-family: $font-family-1;
                 float: left;
                 font-size: 1.375rem;
                 color: $color-primary;
@@ -145,7 +143,7 @@
             .footer-contact{
                 width: 50%;
                 float: left;
-                font-family: Mrs Eaves XL Serif Nar OT;
+                font-family: $font-family-2;
                 font-style: italic;
                 font-size: 3.4rem;
                 color: $color-primary;
@@ -158,17 +156,15 @@
             .ul-top{
                 list-style-type: none;
                 display: flex;
-                justify-content: space-between;
-                padding-right: 17rem;
+                justify-content: center;
                 li{
-                    // margin-right: 4.6rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
                     float: left;
                     .footer-head-info{
-                        font-family: Inter;
+                        font-family: $font-family-1;
                         font-size: 1.3rem;
                         color: $color-primary;
                         line-height: 2rem;
@@ -178,7 +174,7 @@
                         text-transform: uppercase;
                     }
                     .footer-info{
-                        font-family: Inter;
+                        font-family: $font-family-1;
                         font-size: 1.6rem;
                         color: $color-primary;
                         line-height: 2.2rem;
@@ -196,7 +192,7 @@
             .burgundy-head{
                 float: left;
                 width: 50%;
-                font-family: Inter;
+                font-family: $font-family-1;
                 font-size: 1.3rem;
                 color: #FAFAFA;
                 line-height: 2rem;
@@ -210,8 +206,6 @@
                 padding-top: 2.5rem;
                 margin-right: 17rem;
                 padding-right: 0;
-                // margin-left: 1.2rem;
-                // margin-right: 1.9rem;
                 &::after{
                     content: "\2192";
                     position: absolute;
@@ -227,14 +221,13 @@
                 border: 0.1rem solid $color-primary;
                 box-sizing: border-box;
                 border-radius: 10rem;
-                // margin-top: 2.5rem;
                 padding-top: 1rem;
                 padding-left: 2.3rem;
                 padding-bottom: 1rem;
                 padding-right: 32.6rem;
             }
             input[type="email"].burgundy-input::placeholder{
-                font-family: Inter;
+                font-family: $font-family-1;
                 font-size: 1.3rem;
                 color: $color-primary;
                 line-height: 2.2rem;
@@ -250,7 +243,7 @@
                 .footer-bot-list-1{
                     li{
                         list-style-type: none;
-                        font-family: Inter;
+                        font-family: $font-family-1;
                         font-size: 1.1rem;
                         color: $color-primary;
                         line-height: 1.4rem;
@@ -262,10 +255,9 @@
                     }
                 }
                 .footer-bot-list-2{
-                    // padding-left: 73.3rem;
                     li{
                         list-style-type: none;
-                        font-family: Inter;
+                        font-family: $font-family-1;
                         font-size: 1.1rem;
                         color: $color-primary;
                         line-height: 1.4rem;
