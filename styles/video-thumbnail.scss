@@ -2,8 +2,12 @@
 .video-thumbnail{
     .video-thumbnail-wrap{
         position: relative;
-        width: 65.2rem;
-        height: 62rem;
+        width: 33.5rem;
+        width: 31.8rem;
+        @include mq("lap"){
+            width: 65.2rem;
+            height: 62rem;
+        }
         .video-play-button{
             cursor: pointer;
             display: flex;
