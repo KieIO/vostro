@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Blog Article</title>
   </head>
   <body>
@@ -16,7 +17,9 @@
           </div>
           <div class="header-bottom">
             <div class="header-logo">
-              <img src="../assets/images/Logo.svg" />
+              <a href="/">
+                <img src="../assets/images/Logo.svg" />
+              </a>
             </div>
             <div class="hamburger">
               <div class="hamburger-icon" onclick="toogleSidebar()">
@@ -28,14 +31,14 @@
           </div>
           <div class="header-sidebar">
             <ul>
-              <li>About</li>
-              <li>Approach</li>
-              <li>Articles</li>
-              <li>Accountants</li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="approach.html">Approach</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="accountant.html">Accountants</a></li>
             </ul>
             <ul>
               <li>Your Portal</li>
-              <li>Your Por</li>
+              <li>Your Portfolio</li>
             </ul>
             <ul>
               <li>hello@vostroprivate.com.au</li>
@@ -49,15 +52,25 @@
           </div>
           <div class="header-bottom">
             <div class="header-logo">
-              <img src="../assets/images/Logo.svg" />
+              <a href="/">
+                <img src="../assets/images/Logo.svg" />
+              </a>
             </div>
             <div class="header-right">
               <div class="header-category">
                 <ul class="header-category-list">
-                  <li class="header-category-item">About</li>
-                  <li class="header-category-item">Approach</li>
-                  <li class="header-category-item">Articles</li>
-                  <li class="header-category-item">Accountants</li>
+                  <li class="header-category-item">
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="approach.html">Approach</a>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="articles.html">Articles</a>
+                  </li>
+                  <li class="header-category-item">
+                    <a href="accountant.html">Accountants</a>
+                  </li>
                 </ul>
               </div>
               <div class="header-btn">
@@ -110,7 +123,7 @@
         <div class="article-related-title">Related articles</div>
         <div class="article-related-list">
           <ul class="blogs-list">
-            <li class="cart-item-article">
+            <li class="cart-item-article" data-aos="fade-up">
               <div class="tag">Lorem</div>
               <div class="img-wrap">
                 <img src="../assets/images/home_blog_thumbnail_1.png" alt="" />
@@ -123,7 +136,11 @@
               </p>
             </li>
 
-            <li class="cart-item-article">
+            <li
+              class="cart-item-article"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="tag">Lorem</div>
               <div class="img-wrap">
                 <img src="../assets/images/home_blog_thumbnail_2.png" alt="" />
@@ -136,7 +153,11 @@
               </p>
             </li>
 
-            <li class="cart-item-article">
+            <li
+              class="cart-item-article"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div class="tag">Lorem</div>
               <div class="img-wrap">
                 <img src="../assets/images/home_blog_thumbnail_3.png" alt="" />
@@ -149,7 +170,11 @@
               </p>
             </li>
 
-            <li class="cart-item-article">
+            <li
+              class="cart-item-article"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div class="tag">Lorem</div>
               <div class="img-wrap">
                 <img src="../assets/images/home_blog_thumbnail_4.png" alt="" />
@@ -164,21 +189,73 @@
           </ul>
         </div>
       </section>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-contact">
+            <p>Hello@vostroprivate.com.au</p>
+            <p>Phone. 03 9867 4345</p>
+          </div>
+          <ul class="ul-top">
+            <li>
+              <div class="footer-head-info">
+                <p>OFFICE</p>
+              </div>
+              <div class="footer-info">
+                <p>49 Cardigan Place</p>
+                <p>Albert Park VIC 3206</p>
+              </div>
+            </li>
+            <li>
+              <div class="footer-head-info">
+                <p>PO BOX</p>
+              </div>
+              <div class="footer-info">
+                <p>PO Box 629 South</p>
+                <p>Melbourne VIC 3205</p>
+              </div>
+            </li>
+            <li>
+              <div class="footer-head-info">
+                <p>SOCIAL</p>
+              </div>
+              <div class="footer-info">
+                <p>LinkedIn</p>
+                <p>Facebook</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="burgundy">
+          <div class="burgundy-head">
+            <p>JOIN OUR MAILING LIST</p>
+          </div>
+
+          <div class="footer-input-wrapper">
+            <input
+              class="burgundy-input"
+              name="burgundy-input"
+              type="email"
+              placeholder="Email address"
+            />
+          </div>
+          <!-- <div class="burgundy-input-arrow">&#8594;</div> -->
+        </div>
+        <div class="footer-bot">
+          <ul class="footer-bot-list-1">
+            <li>© 2021 Vostro Private Wealth</li>
+            <li>FINANCIAL SERVICES GUIDE</li>
+          </ul>
+          <ul class="footer-bot-list-2">
+            <li>ADVICE WARNING</li>
+            <li>LEGAL NOTICE</li>
+            <li>COMPLAINT RESOLUTION</li>
+            <li>PRIVACY POLICY</li>
+          </ul>
+        </div>
+      </footer>
     </main>
   </body>
-  <script>
-    function toogleSidebar() {
-      const eleSidebar = document.getElementsByClassName("header-sidebar")[0];
-      const eleHamburgerIcon =
-        document.getElementsByClassName("hamburger-icon")[0];
-
-      if (eleSidebar.classList.contains("active")) {
-        eleSidebar.classList.remove("active");
-        eleHamburgerIcon.classList.remove("active");
-      } else {
-        eleSidebar.classList.add("active");
-        eleHamburgerIcon.classList.add("active");
-      }
-    }
-  </script>
+  <script type="text/javascript" src="../js/header.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/init-animation.js"></script>
 </html>
