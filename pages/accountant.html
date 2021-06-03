@@ -103,18 +103,13 @@
                     </div>
                 </div>
             </section>
-            <section class="modal-video" id="video-modal">
-                <div class="modal-content" id="modal-content">
-                    <iframe id="iframe-video-modal" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <span class="close">&times;</span>
-            </section>
+            
             <div class="second-column">
                 <article class="content-article">
                     <h2 class="u-heading-3">A COMMON VISION</h2>
                     <p class="content">We see our clients as part of our extended family, and so we sincerely advise them like we would with our own. That’s why we like to be discerning about who we partner with. If you share in this level of client care and you’d like to strengthen your service offering, then it only makes sense for us to ask - ‘care for a coffee’?</p>
                     <div class="bottom">
-                        <button class="u-button u-button-primary">Let’s Chat</button>
+                        <button class="u-button u-button-primary" onclick="scrollToFooter()">Let’s Chat</button>
                     </div>
                 </article>
             </div>
@@ -196,9 +191,15 @@
                 </ul>
             </div>
     </footer>
-    
+    <section class="modal-video" id="video-modal">
+      <div class="modal-content" id="modal-content">
+          <iframe id="iframe-video-modal" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <span class="close">&times;</span>
+  </section>
     <script type="text/javascript" src="../js/header.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/init-animation.js"></script>
     <script src="../js/modal-video.js"></script>
+    <script type="text/javascript" src="../js/scroll-to-footer.js"></script>
 </body>
