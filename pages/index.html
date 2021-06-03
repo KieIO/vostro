@@ -1,170 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <div class="header-small">
+        <div class="header-top">
+          <p class="top-text">READ OUR LATEST ARTICLE</p>
+        </div>
+        <div class="header-bottom">
+          <div class="header-logo">
+            <img src="../assets/images/Logo.svg" />
+          </div>
+          <div class="hamburger">
+            <div class="hamburger-icon" onclick="toogleSidebar()">
+              <div class="bar-1"></div>
+              <div class="bar-2"></div>
+              <div class="bar-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-sidebar">
+          <ul>
+            <li>About</li>
+            <li>Approach</li>
+            <li>Articles</li>
+            <li>Accountants</li>
+          </ul>
+          <ul>
+            <li>Your Portal</li>
+            <li>Your Por</li>
+          </ul>
+          <ul>
+            <li>hello@vostroprivate.com.au</li>
+            <li>Phone. 03 9867 4345</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-large">
+        <div class="header-top">
+          <p class="top-text">READ OUR LATEST ARTICLE</p>
+        </div>
+        <div class="header-bottom">
+          <div class="header-logo">
+            <img src="../assets/images/Logo.svg" />
+          </div>
+          <div class="header-right" >
+              <div class="header-category">
+                <ul class="header-category-list">
+                  <li class="header-category-item">About</li>
+                  <li class="header-category-item">Approach</li>
+                  <li class="header-category-item">Articles</li>
+                  <li class="header-category-item">Accountants</li>
+                </ul>
+              </div>
+              <div class="header-btn">
+                <button class="u-button u-button-ghost">Your Portal</button>
+                <button class="u-button u-button-ghost">Your Porfolio</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="home-page">
-        <section class="banner-with-text u-section-padding u-first-section-page u-section-space-bottom home-banner-with-text-1">
-            <h1 class="u-heading-1 title-left-particle">A brighter livelihood for you and your family. </h1>
-            <figure class="img-wrap">
-                <img src="../assets/images/banner1.png" alt="">
-            </figure>
-        </section>
-
-         <section class="description">
-            <div class="description-content">
-                We’re experts at creating a <u>wealth strategy</u> and on-going <u>management plan</u> that responds to  your current situation and reflects what a fulfilling future looks like to you. Delivered with the uttermost transparency, from day uno.
+      <section
+        class="
+          banner-with-text
+          u-section-padding u-first-section-page u-section-space-bottom
+          home-banner-with-text-1
+        "
+      >
+        <h1 class="u-heading-1 title-left-particle">
+          A brighter livelihood for you and your family.
+        </h1>
+        <section class="video-thumbnail img-wrap">
+          <div class="video-thumbnail-wrap">
+            <img src="../assets/images/banner1.png" alt="image" />
+            <div class="video-play-button">
+              <img src="../assets/particles/play.svg" alt="play" />
             </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="description" data-aos="fade-up">
+        <div class="description-content">
+          We’re experts at creating a <u>wealth strategy</u> and on-going
+          <u>management plan</u> that responds to your current situation
+          and reflects what a fulfilling future looks like to you. Delivered
+          with the uttermost transparency, from day uno.
+        </div>
+      </section>
+
+      <section
+        class="article-with-img-text u-section-padding u-section-space-verticle"
+        data-aos="fade-up"
+      >
+        <figure class="img-wrap">
+          <img src="../assets/images/home_a_warm_out_look.png" alt="" />
+        </figure>
+        <div class="second-column">
+          <article class="content-article">
+            <h2 class="u-heading-3">a warm outlook</h2>
+            <p class="content">
+              We see our relationship as a union of ambition. Your lens pictures
+              your aspirational lifestyle, while ours visualises the best way to
+              make it a reality.
+            </p>
+            <div class="bottom">
+              <button class="u-button u-button-primary">
+                <a href="#footer">Let’s chat</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="title-center home-title-get-ready" data-aos="fade-up">
+        <h2 class="u-heading-2 title-main">
+          We’re excited to begin your wealth journey,whenever you’re ready.
+        </h2>
+      </section>
+
+      <section
+        class="
+          article-with-img-text
+          revert
+          u-section-padding u-section-space-verticle
+        "
+        data-aos="fade-up"
+      >
+        <figure class="img-wrap">
+          <img src="../assets/images/home_before_we_meet.png" alt="" />
+        </figure>
+        <div class="second-column">
+          <article class="content-article">
+            <h2 class="u-heading-3">BEFORE WE MEET</h2>
+            <p class="content">
+              Ask yourself what’s really important to you and your family. We
+              look forward to chatting about how we can build your financial
+              future around your answer.
+            </p>
+            <div class="bottom">
+              <button class="u-button u-button-primary">
+                <a href="./approach.html">What happens next?</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonial-item" data-aos="fade-up">
+        <div class="content">
+          <p>
+            Vostro really took the time to get to know us and understand our
+            values and goals. Now we have a financial strategy has given us
+            confidence in our long term direction and the peace of mind.
+          </p>
+          <address class="author">Jim & Pam</address>
+        </div>
+      </section>
+
+      <section class="accreditation u-border-bottom" data-aos="fade-up">
+        <h3 class="u-heading-3">OUR AccReditation</h3>
+        <ul class="items">
+          <li class="item">
+            <img src="../assets/images/accreditation_1.png" alt="" />
+          </li>
+          <li class="item">
+            <img src="../assets/images/accreditation_2.png" alt="" />
+          </li>
+          <li class="item">
+            <img src="../assets/images/accreditation_3.png" alt="" />
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="
+          article-with-img-text
+          u-section-padding u-border-bottom u-section-space-verticle
+        "
+        data-aos="fade-up"
+      >
+        <figure class="img-wrap">
+          <img src="../assets/images/home_meet_our_team.png" alt="" />
+        </figure>
+        <div class="second-column">
+          <article class="content-article">
+            <h2 class="u-heading-3">MEET OUR TEAM</h2>
+            <p class="content">
+              We go about our work with minimum fuss, but with the uttermost
+              focus on making a brighter future for you and your family. That’s
+              our sincere promise to you.
+            </p>
+            <div class="bottom">
+              <button class="u-button u-button-primary">
+                <a href="./about.html">Learn more</a>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="partners-slider u-border-bottom" data-aos="fade-up">
+        <h3 class="u-heading-3">OUR PARTNERS</h3>
+        <div class="partners-slider-content">
+          <ul class="items">
+            <div class="column">
+              <li class="item">
+                <img src="../assets/images/partner_1.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="../assets/images/partner_2.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="../assets/images/partner_3.png" alt="" />
+              </li>
+            </div>
+            <div class="column">
+              <li class="item">
+                <img src="../assets/images/partner_4.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="../assets/images/partner_5.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="../assets/images/partner_6.png" alt="" />
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <div class="blogs u-section-space-verticle">
+        <section class="title-center" data-aos="fade-up">
+          <h2 class="u-heading-2 title-main">Advice to help you get ahead</h2>
         </section>
 
-        <section class="article-with-img-text u-section-padding u-section-space-verticle">
-            <figure class="img-wrap">
-                <img src="../assets/images/home_a_warm_out_look.png" alt="">
-            </figure>
-            <div class="second-column">
-                <article class="content-article">
-                    <h2 class="u-heading-3">a warm outlook</h2>
-                    <p class="content">We see our relationship as a union of ambition. Your lens pictures your aspirational lifestyle, while ours visualises the best way to make it a reality.</p>
-                    <div class="bottom">
-                        <button class="u-button u-button-primary">Let’s chat</button>
+        <section class="tag-buttons-list" data-aos="fade-up">
+          <div class="tag-buttons-list-warpper">
+            <div class="tag-buttons-list-item">LinkedIn</div>
+            <div class="tag-buttons-list-item">Facebook</div>
+            <div class="tag-buttons-list-item">Blog</div>
+          </div>
+        </section>
+
+        <section class="blogs-list-wrap">
+          <ul class="blogs-list">
+            <li class="cart-item-article"  data-aos="fade-up" >
+              <div class="tag">Lorem</div>
+              <div class="img-wrap">
+                <img src="../assets/images/home_blog_thumbnail_1.png" alt="" />
+              </div>
+              <h4 class="title u-title-card">Lorem ipsum dolor sit amet.</h4>
+              <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, magni. Repellat non incidunt in magni enim. Voluptas
+                nemo porro reiciendis?
+              </p>
+            </li>
+
+            <li class="cart-item-article"  data-aos="fade-up">
+              <div class="tag">Lorem</div>
+              <div class="img-wrap">
+                <img src="../assets/images/home_blog_thumbnail_2.png" alt="" />
+              </div>
+              <h4 class="title u-title-card">Lorem ipsum dolor sit amet.</h4>
+              <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, magni. Repellat non incidunt in magni enim. Voluptas
+                nemo porro reiciendis?
+              </p>
+            </li>
+
+            <li class="cart-item-article"  data-aos="fade-up">
+              <div class="tag">Lorem</div>
+              <div class="img-wrap">
+                <img src="../assets/images/home_blog_thumbnail_3.png" alt="" />
+              </div>
+              <h4 class="title u-title-card">Lorem ipsum dolor sit amet.</h4>
+              <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, magni. Repellat non incidunt in magni enim. Voluptas
+                nemo porro reiciendis?
+              </p>
+            </li>
+
+            <li class="cart-item-article"  data-aos="fade-up">
+              <div class="tag">Lorem</div>
+              <div class="img-wrap">
+                <img src="../assets/images/home_blog_thumbnail_4.png" alt="" />
+              </div>
+              <h4 class="title u-title-card">Lorem ipsum dolor sit amet.</h4>
+              <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, magni. Repellat non incidunt in magni enim. Voluptas
+                nemo porro reiciendis?
+              </p>
+            </li>
+
+            <li class="cart-item-article"  data-aos="fade-up">
+              <div class="tag">Lorem</div>
+              <div class="img-wrap">
+                <img src="../assets/images/home_blog_thumbnail_5.png" alt="" />
+              </div>
+              <h4 class="title u-title-card">Lorem ipsum dolor sit amet.</h4>
+              <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, magni. Repellat non incidunt in magni enim. Voluptas
+                nemo porro reiciendis?
+              </p>
+            </li>
+
+            <li class="cart-item-article"  data-aos="fade-up">
+              <div class="tag">Lorem</div>
+              <div class="img-wrap">
+                <img src="../assets/images/home_blog_thumbnail_6.png" alt="" />
+              </div>
+              <h4 class="title u-title-card">Lorem ipsum dolor sit amet.</h4>
+              <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, magni. Repellat non incidunt in magni enim. Voluptas
+                nemo porro reiciendis?
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="title-center u-section-space-bottom" data-aos="fade-up">
+        <h2 class="u-heading-2 title-main">
+          Our focus is TO influencE a brighter livelihood for you and your
+          family.
+        </h2>
+      </section>
+    </main>
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <p>Hello@vostroprivate.com.au</p>
+                <p>Phone. 03 9867 4345</p>
+            </div>
+            <ul class="ul-top">
+                <li>
+                    <div class="footer-head-info">
+                        <p>OFFICE</p>
                     </div>
-                </article>
-            </div>
-        </section>
-
-         <section class="title-center home-title-get-ready">
-            <h2 class="u-heading-2 title-main">
-                We’re excited to begin your wealth journey,whenever you’re ready.
-            </h2>
-        </section>
-
-        <section class="article-with-img-text revert u-section-padding u-section-space-verticle">
-            <figure class="img-wrap">
-                <img src="../assets/images/home_before_we_meet.png" alt="">
-            </figure>
-            <div class="second-column">
-                <article class="content-article">
-                    <h2 class="u-heading-3">BEFORE WE MEET</h2>
-                    <p class="content">
-                        Ask yourself what’s really important to you and your family. We look forward to chatting about how we can build your financial future around your answer.
-                    </p>
-                    <div class="bottom">
-                        <button class="u-button u-button-primary">What happens next?</button>
+                    <div class="footer-info">
+                        <p>49 Cardigan Place</p>
+                        <p>Albert Park VIC 3206</p>
                     </div>
-                </article>
-            </div>
-        </section>
-
-
-        <section class="testimonial-item">
-            <div class="content">
-                <p>
-                    Vostro really took the time to get to know us and understand our values and goals. Now we have a financial strategy has given us confidence in our long term direction and the peace of mind.
-                </p>
-                <address class="author">Jim & Pam</address>
-            </div>
-        </section>
-
-        <section class="accreditation u-border-bottom">
-            <h3 class="u-heading-3">OUR AccReditation</h3>
-            <ul class="items">
-                <li class="item">
-                    <img src="../assets/images/accreditation_1.png" alt="">
                 </li>
-                <li class="item">
-                    <img src="../assets/images/accreditation_2.png" alt="">
+                <li>
+                    <div class="footer-head-info">
+                        <p>PO BOX</p>
+                    </div>
+                    <div class="footer-info">
+                        <p>PO Box 629 South</p>
+                        <p>Melbourne VIC 3205</p>
+                    </div>
                 </li>
-                <li class="item">
-                    <img src="../assets/images/accreditation_3.png" alt="">
+                <li>
+                    <div class="footer-head-info">
+                        <p>SOCIAL</p>
+                    </div>
+                    <div class="footer-info">
+                        <p>LinkedIn</p>
+                        <p>Facebook</p>
+                    </div>
                 </li>
             </ul>
-        </section>
-
-        <section class="article-with-img-text revert u-section-padding u-border-bottom u-section-space-verticle">
-            <figure class="img-wrap">
-                <img src="../assets/images/home_meet_our_team.png" alt="">
-            </figure>
-            <div class="second-column">
-                <article class="content-article">
-                    <h2 class="u-heading-3">MEET OUR TEAM</h2>
-                    <p class="content">
-                        We go about our work with minimum fuss, but with the uttermost focus on making a brighter future for you and your family. That’s our sincere promise to you.
-                    </p>
-                    <div class="bottom">
-                        <button class="u-button u-button-primary">Learn more</button>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="partners-slider u-border-bottom">
-            <h3 class="u-heading-3">OUR PARTNERS</h3>
-            <div class="partners-slider-content ">
-                <ul class="items">
-                    <div class="column">
-                        <li class="item">
-                            <img src="../assets/images/partner_1.png" alt="">
-                        </li>
-                        <li class="item">
-                            <img src="../assets/images/partner_2.png" alt="">
-                        </li>
-                        <li class="item">
-                            <img src="../assets/images/partner_3.png" alt="">
-                        </li>
-                    </div>
-                    <div class="column">
-                        <li class="item">
-                            <img src="../assets/images/partner_4.png" alt="">
-                        </li>
-                        <li class="item">
-                            <img src="../assets/images/partner_5.png" alt="">
-                        </li>
-                        <li class="item">
-                            <img src="../assets/images/partner_6.png" alt="">
-                        </li>
-                    </div>
-                    
-                    
-                </ul>
-            </div>
-        </section>
-
-        <div class="blogs u-section-space-verticle">
-            <section class="title-center">
-                <h2 class="u-heading-2 title-main">
-                    Advice to help you get ahead
-                </h2>
-            </section>
-
-            <section class="tag-buttons-list">
-                <div class="tag-buttons-list-warpper">
-                    <div class="tag-buttons-list-item">
-                        LinkedIn
-                    </div>
-                    <div class="tag-buttons-list-item">
-                       Facebook
-                    </div>
-                    <div class="tag-buttons-list-item">
-                        Blog
-                    </div>
-                </div>
-            </section>
         </div>
-
-        <section class="title-center u-section-space-bottom">
-                <h2 class="u-heading-2 title-main">
-                    Our focus is TO influencE a brighter livelihood for you and your family.
-                </h2>
-        </section>
-    </main>
+        <div class="burgundy">
+            <div class="burgundy-head">
+                <p>JOIN OUR MAILING LIST</p>
+            </div>
+            
+            <div class="footer-input-wrapper">
+                <input class="burgundy-input" name="burgundy-input" type="email" placeholder="Email address">
+            </div>
+            <!-- <div class="burgundy-input-arrow">&#8594;</div> -->
+        </div>
+        <div class="footer-bot">
+            <ul class="footer-bot-list-1">
+                <li>© 2021 Vostro Private Wealth</li>
+                <li>FINANCIAL SERVICES GUIDE</li>
+            </ul>
+            <ul class="footer-bot-list-2">
+                <li>ADVICE WARNING</li>
+                <li>LEGAL NOTICE</li>
+                <li>COMPLAINT RESOLUTION</li>
+                <li>PRIVACY POLICY</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="'../../../js/header.js"></script>
     <script src="'../../../js/partner-slider.js"></script>
-</body>
-
+    <script src="'../../../js/modal-video.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/init-animation.js"></script>
+  </body>
 </html>
