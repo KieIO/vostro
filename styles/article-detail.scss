@@ -87,6 +87,9 @@
 .blog-article-related {
   padding-top: 7.5rem;
   padding-bottom: 12.5rem;
+  @include mq("tablet") {
+    padding-bottom: 10rem;
+  }
   .blogs-list {
     @include mq("tablet") {
       width: 100%;
