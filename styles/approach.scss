@@ -24,7 +24,8 @@
 		}
 	}
 	.cart-item-wrapper {
-		padding: 0 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 		display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -85,8 +86,11 @@
                 }
 			}
 		}
-		// .grid-item-line {
-		// 	border-right: 1px solid $color-primary;
-		// }
+	}
+	.padding-bottom-sm{
+		padding-bottom: 2rem;
+	}
+	.padding-bottom-md{
+		padding-bottom: 15rem;
 	}
 }

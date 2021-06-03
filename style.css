@@ -32,7 +32,8 @@
     max-width: 65rem; }
 
 .approach .cart-item-wrapper {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -80,6 +81,12 @@
           content: ""; }
         .approach .cart-item-wrapper .grid-item:nth-child(4n + 0) {
           border-right: none; } }
+
+.approach .padding-bottom-sm {
+  padding-bottom: 2rem; }
+
+.approach .padding-bottom-md {
+  padding-bottom: 15rem; }
 
 .article-with-img-text {
   margin: auto; }
@@ -315,17 +322,22 @@ body {
 .check-list {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 0 2rem; }
+  @media screen and (min-width: 1008px) {
+    .check-list {
+      padding: 0 30rem; } }
   .check-list .check-list-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 80%;
     justify-content: center;
     align-items: center; }
-    @media screen and (min-width: 641px) {
-      .check-list .check-list-wrapper {
-        max-width: 75%; } }
     .check-list .check-list-wrapper .check-list-item {
+      margin-left: 1rem;
+      text-align: center;
+      font-family: Mrs Eaves XL Serif Nar OT;
       font-style: italic;
       font-weight: 400;
       line-height: 3.8rem;
@@ -342,6 +354,7 @@ body {
   justify-content: center;
   align-items: center; }
   .description .description-content {
+    font-family: Mrs Eaves XL Serif Nar OT;
     font-weight: 400;
     line-height: 3.8rem;
     font-size: 3.4rem;
