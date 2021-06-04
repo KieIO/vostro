@@ -2,16 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url(./assets/fonts/mrseavesxlsernarot/style.css);
 @media screen and (min-width: 641px) {
-  .page-about .page-banner-with-text-1 h1 {
+  .accountant .page-banner-with-text-1 h1 {
     max-width: 500px; } }
 
-.page-about .title-center {
+.accountant .title-center {
   padding-bottom: 50px; }
   @media screen and (min-width: 641px) {
-    .page-about .title-center h2 {
+    .accountant .title-center h2 {
       padding: 50px; } }
 
-.page-about .check-list .check-list-wrapper .check-list-item {
+.accountant .check-list .check-list-wrapper .check-list-item {
   text-align: center; }
 
 .accreditation {
@@ -879,7 +879,9 @@ body {
           font-style: normal;
           line-height: 2.8rem;
           letter-spacing: 0.02em;
-          text-align: center; } }
+          text-align: center;
+          width: 11rem;
+          transition: none; } }
 
 .home-page {
   overflow: hidden; }
