@@ -798,6 +798,10 @@ body {
     margin-top: 6rem; }
     .home-page .blogs .tag-buttons-list .tag-buttons-list-warpper {
       max-width: 65rem; }
+      .home-page .blogs .tag-buttons-list .tag-buttons-list-warpper button {
+        min-width: 7rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem; }
   .home-page .blogs .blogs-list-wrap {
     padding-top: 7.5rem; }
     @media screen and (min-width: 641px) {
@@ -1113,7 +1117,9 @@ body {
   all: unset;
   border-radius: 20rem;
   text-align: center;
-  padding: 1rem 3rem;
+  min-height: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   cursor: pointer;
   transition: all 0.2s; }
   .u-button a {
