@@ -942,9 +942,12 @@ body {
   .testimonial-item .content {
     position: relative;
     color: #fafafa; }
-    .testimonial-item .content p {
+    .testimonial-item .content .quote {
       font-size: 28px;
-      line-height: 32px; }
+      line-height: 32px;
+      margin: 0;
+      font-family: "Mrs Eaves XL Serif Nar OT", Helvetica, Arial, Verdana, sans-serif;
+      font-weight: 400; }
     .testimonial-item .content::before, .testimonial-item .content::after {
       position: absolute;
       content: "";
@@ -965,7 +968,7 @@ body {
         max-width: 112rem;
         margin: auto;
         padding: 0 10rem; }
-        .testimonial-item .content p {
+        .testimonial-item .content .quote {
           font-size: 3.4rem;
           line-height: 3.8rem; }
         .testimonial-item .content::before {

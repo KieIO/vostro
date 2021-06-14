@@ -10,9 +10,12 @@
     .content {
         position: relative;
         color: $color-white;
-        p {
+        .quote {
             font-size: 28px;
             line-height: 32px;
+            margin: 0;
+            font-family: $font-family-2;
+            font-weight: 400;
 
         }
         &::before, &::after {
@@ -37,10 +40,9 @@
             max-width: 112rem;
             margin: auto;
             padding: 0 10rem;
-            p {
+            .quote {
                 font-size: 3.4rem;
                 line-height: 3.8rem;
-
             }
             &::before {
                 top: 0;
