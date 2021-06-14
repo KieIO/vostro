@@ -4,72 +4,67 @@
     display: flex;
     flex-direction: column;
     border-top: 1px solid $color-primary;
-    .footer-top{
-        .footer-contact{
+    .footer-top {
+        padding: 5rem 3.75rem;
+        .footer-contact {
             font-family: $font-family-2;
             font-style: italic;
-            font-size: 3.5rem;
+            font-size: 3.4rem;
+            line-height: 3.8rem;
             color: $color-primary;
-            line-height: 3.2rem;
-            padding-left: 1.5rem;
-            padding-top: 5rem;
-            padding-bottom: 3rem;
+            margin-bottom: 3rem;
         }
-        ul{
-            li{
-                .footer-head-info{
-                    font-family: $font-family-1;
-                    font-size: 1.625rem;
+        ul {
+            list-style: none;
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 3rem;
+                }
+                .footer-head-info {
+                    font-size: 13px;
+                    line-height: 20px;
                     color: $color-primary;
-                    line-height: 2.5rem;
-                    padding-left: 2.5rem;
-                    padding-bottom: 1.5rem;
                     letter-spacing: 0.0875em;
                     text-transform: uppercase;
+                    margin-bottom: 1.2rem;
                 }
-                .footer-info{
+                .footer-info {
                     font-family: $font-family-1;
                     font-size: 2rem;
-                    color: $color-primary;
                     line-height: 2.75rem;
-                    padding-left: 2.5rem;
-                    padding-bottom: 3.75rem;
+                    color: $color-primary;
                     letter-spacing: 0.0125em;
                 }
             }
         }
-
     }
-    .burgundy{
+    .burgundy {
         position: relative;
         background-color: $color-primary;
-        .burgundy-head{
+        padding: 5rem 2.5rem;
+        .burgundy-head {
             font-family: $font-family-1;
+            color: #fafafa;
             font-size: 1.625rem;
-            color: #FAFAFA;
             line-height: 2.5rem;
-            padding-top: 4.5rem;
-            padding-left: 2.5rem;
-            padding-bottom: 2rem;
             letter-spacing: 0.0875em;
             text-transform: uppercase;
+            margin-bottom: 2rem;
         }
-        .footer-input-wrapper{
-            display: flex;
+        .footer-input-wrapper {
             position: relative;
-            margin: 0 2.2rem;
-            padding-bottom: 5rem;
-            &::after{
+            &::after {
                 content: "\2192";
                 position: absolute;
-                top: 0.75rem;
                 right: 1.5rem;
                 font-size: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
-        .burgundy-input{
+        .burgundy-input {
             width: 100%;
-            background-color: #FAFAFA;
+            background-color: #fafafa;
             border: 0.125rem solid $color-primary;
             box-sizing: border-box;
             border-radius: 12.5rem;
@@ -79,195 +74,94 @@
             padding-left: 1.875rem;
             padding-bottom: 1rem;
         }
-        input[type="email"].burgundy-input::placeholder{
-            
+        input[type="email"].burgundy-input::placeholder {
             font-family: $font-family-1;
             font-size: 1.625rem;
             color: $color-primary;
             line-height: 2.75rem;
             letter-spacing: 0.0125em;
         }
-        .burgundy-input-arrow{
+        .burgundy-input-arrow {
             position: absolute;
             font-size: 2rem;
             top: 9.8rem;
             left: 37rem;
         }
     }
-    .footer-bot{
+    .footer-bot {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        .footer-bot-list-1{
-            display: flex;
-            li{
-                list-style-type: none;
-                font-family: $font-family-1;
-                font-size: 1.375rem;
-                color: $color-primary;
-                line-height: 1.75rem;
-                // padding-top: 2.5rem;
-                padding-left: 2.5rem;
+        padding: 2rem 2.5rem 0.875rem;
+        li {
+            list-style-type: none;
+            font-family: $font-family-1;
+            font-size: 1.375rem;
+            line-height: 1.75rem;
+            color: $color-primary;
+            letter-spacing: 0.0875em;
+            text-transform: uppercase;
+            padding-bottom: 1.625rem;
+            &:not(:last-child) {
                 margin-right: 2.5rem;
-                letter-spacing: 0.0875em;
-                text-transform: uppercase;
             }
         }
-        .footer-bot-list-2{
+        .footer-bot-list-1, .footer-bot-list-2 {
             display: flex;
+            align-items: center;
             flex-wrap: wrap;
-            li{
-                list-style-type: none;
-                font-family: $font-family-1;
-                float: left;
-                font-size: 1.375rem;
-                color: $color-primary;
-                line-height: 1.75rem;
-                // padding-top: 2.5rem;
-                padding-left: 2.5rem;
-                margin-right: 2.5rem;
-                letter-spacing: 0.0875em;
-                text-transform: uppercase;
-            }
+            list-style: none;
         }
-
     }
 }
 @include mq("lap") {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
-        .footer-top{
-            .footer-contact{
+        .footer-top {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 5rem 4.5rem;
+            .footer-contact {
                 width: 50%;
-                float: left;
-                font-family: $font-family-2;
-                font-style: italic;
-                font-size: 3.4rem;
-                color: $color-primary;
-                line-height: 3.8rem;
-                padding-left: 4.5rem;
-                padding-top: 5rem;
-                padding-bottom: 0rem;
-                letter-spacing: 0em;
+                margin-bottom: 0;
+                font-size: 3.5rem;
+                line-height: 4rem;
             }
-            .ul-top{
-                list-style-type: none;
-                display: flex;
-                justify-content: center;
-                li{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                    float: left;
-                    .footer-head-info{
-                        font-family: $font-family-1;
-                        font-size: 1.3rem;
-                        color: $color-primary;
-                        line-height: 2rem;
-                        padding-top: 5rem;
-                        padding-bottom: 1.2rem;
-                        letter-spacing: 0.07em;
-                        text-transform: uppercase;
-                    }
-                    .footer-info{
-                        font-family: $font-family-1;
-                        font-size: 1.6rem;
-                        color: $color-primary;
-                        line-height: 2.2rem;
-                        padding-top: 1.2rem;
-                        letter-spacing: 0.01em;
+            .ul-top {
+                display: grid;
+                grid-template-columns: 1fr 1fr auto;
+                li {
+                    margin-bottom: 0 !important;
+                    &:not(:last-child) {
+                        margin-right: 4.5rem;
                     }
                 }
+                .footer-info {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem
+                }
             }
-
         }
-        .burgundy{
-            float: left;
-            width: 100%;
-            background-color: $color-primary;
-            .burgundy-head{
-                float: left;
-                width: 50%;
-                font-family: $font-family-1;
+        .burgundy {
+            padding: 4rem 4.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            .burgundy-head {
+                margin-bottom: 0;
+            }
+            .footer-input-wrapper {
+                max-width: 54rem;
+            }
+        }
+        .footer-bot {
+            padding: 2rem 4.5rem 0;
+            li {
+                padding-bottom: 2rem;
                 font-size: 1.3rem;
-                color: #FAFAFA;
                 line-height: 2rem;
-                padding-top: 3.6rem;
-                padding-left: 4.5rem;
-                letter-spacing: 0.07em;
-                text-transform: uppercase;
-            }
-            .footer-input-wrapper{
-                position: relative;
-                padding-top: 2.5rem;
-                margin-right: 17rem;
-                padding-right: 0;
-                &::after{
-                    content: "\2192";
-                    position: absolute;
-                    top: 3rem;
-                    right: 1.5rem;
-                    font-size: 2rem;
-                }
-            }
-            .burgundy-input{
-
-                width: 100%;
-                background-color: #FAFAFA;
-                border: 0.1rem solid $color-primary;
-                box-sizing: border-box;
-                border-radius: 10rem;
-                padding-top: 1rem;
-                padding-left: 2.3rem;
-                padding-bottom: 1rem;
-                padding-right: 32.6rem;
-            }
-            input[type="email"].burgundy-input::placeholder{
-                font-family: $font-family-1;
-                font-size: 1.3rem;
-                color: $color-primary;
-                line-height: 2.2rem;
-                letter-spacing: 0.01em;
-            }
-            .burgundy-input-arrow{
-                position: absolute;
-                top: 19.6rem;
-                left: 120rem;
             }
         }
-        .footer-bot{
-                .footer-bot-list-1{
-                    li{
-                        list-style-type: none;
-                        font-family: $font-family-1;
-                        font-size: 1.1rem;
-                        color: $color-primary;
-                        line-height: 1.4rem;
-                        padding-left: 2rem;
-                        margin-right: 0;
-                        letter-spacing: 0.07em;
-                        text-transform: uppercase;
-                        padding-bottom: 0rem;
-                    }
-                }
-                .footer-bot-list-2{
-                    li{
-                        list-style-type: none;
-                        font-family: $font-family-1;
-                        font-size: 1.1rem;
-                        color: $color-primary;
-                        line-height: 1.4rem;
-                        padding-left: 1rem;
-                        margin-right: 1rem;
-                        letter-spacing: 0.07em;
-                        text-transform: uppercase;
-                        padding-bottom: 0rem;
-                    }
-                }
-            }
     }
 }
