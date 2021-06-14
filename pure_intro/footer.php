@@ -14,7 +14,7 @@
 <footer class="footer">
         <div class="footer-top">
             <div class="footer-contact">
-                <p>Hello@vostroprivate.com.au</p>
+                <p>hello@vostroprivate.com.au</p>
                 <p>Phone. 03 9867 4345</p>
             </div>
             <ul class="ul-top">
@@ -51,7 +51,7 @@
         <?php //echo do_shortcode('[mc4wp_form id="36"]')?>
 		<div class="burgundy">
             <div class="burgundy-head">
-                <p>JOIN OUR MAILING LIST</p>
+                JOIN OUR MAILING LIST
             </div>
             
             <div class="footer-input-wrapper">
