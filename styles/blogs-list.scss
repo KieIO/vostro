@@ -1,42 +1,75 @@
 @import "../styles/variable.scss";
 
-.blogs-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: fit-content;
+.blogs-list-wrap {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     margin: auto;
-    column-gap: 1.25rem;
-    padding: 0 2.5rem;
-    list-style: none;
-    .cart-item-article {
-        &:nth-child(2n + 1) {
-            padding-right: 1.25rem;
-            border-right: 1px solid $color-primary;
-        }
-        &:nth-child(n + 3) {
-            padding-top: 5rem;
-        }
-    }
     @include mq("tablet") {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
-        padding: 0 4.5rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    .blogs-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+        margin: auto;
+        list-style: none;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 100%;
+            background-color: $color-primary;
+            top: 0;
+            left: 50%;
+            transform: translateX(calc(50% - 1px));
+        }
         .cart-item-article {
-            border-right: 1px solid $color-primary;
-            padding-top: 0;
-            &:nth-child(2n + 1) {
-                padding-right: 2rem;
-            }
-            padding-right: 2rem;
-            &:nth-child(4n) {
-                border: none;
-                padding-right: 0;
-            }
             &:nth-child(n + 3) {
-                padding-top: 0;
-            }
-            &:nth-child(n + 5) {
                 padding-top: 5rem;
+            }
+            &:nth-child(2n + 1) {
+                padding-right: 1.25rem;
+            }
+            &:nth-child(2n) {
+                padding-left: 1.25rem;
+            }
+        }
+        @include mq("tablet") {
+            grid-template-columns: repeat(4, 1fr);
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                background-color: $color-primary;
+                top: 0;
+                left: 25%;
+                transform: translateX(calc(25% - 1px));
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 25%;
+                height: 100%;
+                top: 0;
+                left: 50%;
+                border-left: 1px solid $color-primary;
+                border-right: 1px solid $color-primary;
+                background: none;
+            }
+            .cart-item-article {
+                padding-top: 0;
+                padding-left: 2.2rem !important;
+                padding-right: 2.2rem !important;
+                &:nth-child(n + 3) {
+                    padding-top: 0;
+                }
+                &:nth-child(n + 5) {
+                    padding-top: 5rem;
+                }
             }
         }
     }
