@@ -1,0 +1,63 @@
+@import "./variable.scss";
+
+.testimonial-item {
+    text-align: center;
+    background: $color-primary;
+    padding: 20rem 2rem 15rem;
+    @include mq("tablet") {
+        padding: 15rem 10rem;
+    }
+    .content {
+        position: relative;
+        color: $color-white;
+        p {
+            font-size: 28px;
+            line-height: 32px;
+
+        }
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 100%;
+            background-size: contain;
+        }
+        &::before {
+            background-image: url('../assets/particles/quote-mark-left.svg');
+            top: -8rem;
+            left: 0;
+        }
+        &::after {
+            background-image: url('../assets/particles/quote-mark-right.svg');
+            bottom: -94%;
+            right: 0;
+        }
+        @include mq("tablet") {
+            max-width: 112rem;
+            margin: auto;
+            padding: 0 10rem;
+            p {
+                font-size: 3.4rem;
+                line-height: 3.8rem;
+
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                top: 0;
+                right: 0;
+                bottom: unset;
+            }
+        }
+    }
+    .author {
+        text-align: center;
+        color: $color-white;
+        margin-top: 3rem;
+        &::before {
+            content: "— ";
+        }
+    }
+}

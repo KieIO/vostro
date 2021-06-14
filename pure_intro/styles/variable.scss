@@ -1,0 +1,50 @@
+$color-primary: #98262b;
+$color-primary-2: #f6a300;
+$color-white: #fafafa;
+$color-disable: rgb(156, 156, 156);
+
+$font-family-1: "Inter", Helvetica, Arial, Verdana, sans-serif;
+$font-family-2: "Mrs Eaves XL Serif Nar OT", Helvetica, Arial, Verdana, sans-serif;
+
+$fontsize-paragraph: 1.8rem;
+$lineheight-paragraph: 2.6rem;
+
+$font-family: 'Inter', sans-serif;
+$font-weight-bold: 700;
+
+
+$boxshodow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+$border-radius-button: 20rem;
+$border-radius: 2rem;
+$border-radius-sm: 0.5rem;
+
+$max-width:75%;
+
+$tablet: "screen and (min-width: 641px)";
+$lap: "screen and (min-width: 1008px)";
+$desk: "screen and (min-width: 1024px)";
+$widescreen: "screen and (min-width: 1240px)";
+@mixin mq($alias) {
+  @if $alias == "tablet" {
+    @media #{$tablet} {
+      @content;
+    }
+  } @else if $alias == "lap" {
+    @media #{$lap} {
+      @content;
+    }
+  } @else if $alias == "desk" {
+    @media #{$desk} {
+      @content;
+    }
+  } @else if $alias == "widescreen" {
+    @media #{$widescreen} {
+      @content;
+    }
+  }
+}
+// Ex:
+// @include mq("tablet") {
+//   font-size: 62.5%;
+// }

@@ -1,0 +1,145 @@
+@import "./variable.scss";
+
+.u-heading-1 {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: $font-weight-bold;
+    @include mq("tablet") {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.u-heading-2 {
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: $font-weight-bold;
+    @include mq("tablet") {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+.u-heading-3 {
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: $font-weight-bold;
+    @include mq("tablet") {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+.u-title-card {
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: $font-family-2;
+    font-weight: 400;
+    @include mq("tablet") {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+.u-sub-text {
+    font-size: 14px;
+    line-height: 20px;
+    @include mq("tablet") {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+.u-section-padding {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    @include mq("desk") { 
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+}
+
+.u-section-space-bottom {
+    padding-bottom: 15rem;
+}
+.u-section-space-top {
+    padding-top: 15rem;
+}
+.u-section-space-verticle {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+
+.u-first-section-page {
+    padding-top: calc(10rem + 6rem); // + header height
+}
+
+.u-button {
+    all: unset;
+    border-radius: $border-radius-button;
+    text-align: center;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    a {
+        text-decoration: none;
+        color: currentColor;
+    }
+}
+
+.u-button-primary {
+    background: $color-primary-2;
+    color: $color-white;
+    &:hover {
+        background: rgba($color-primary-2, 0.9);
+        box-shadow: $boxshodow;
+    }
+    &:focus,
+    &:visited {
+        color: rgba($color-white, 0.8);
+    }
+    &:focus {
+        outline: 1px solid 5px rgba($color-primary-2, 0.5);
+    }
+    &:disabled {
+        color: $color-disable;
+        cursor: not-allowed;
+    }
+}
+
+.u-button-ghost {
+    background: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    &:hover {
+        box-shadow: $boxshodow;
+    }
+    &:focus,
+    &:visited {
+        color: rgba($color-primary, 0.8);
+    }
+    &:focus {
+        outline: 1px solid 5px rgba($color-primary, 0.5);
+    }
+    &:disabled {
+        background: rgba($color-disable, 0.2);
+        color: $color-disable;
+        cursor: not-allowed;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.u-border-bottom {
+    border-bottom: 1px solid $color-primary;
+}

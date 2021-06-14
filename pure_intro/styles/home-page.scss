@@ -1,0 +1,34 @@
+@import "./variable.scss";
+
+.home-page {
+    overflow: hidden;
+    .home-banner-with-text-1 {
+        h1 {
+            @include mq("tablet") {
+                max-width: 500px;
+            }
+        }
+    }
+
+    .home-title-get-ready {
+        @include mq("tablet") {
+            max-width: 65rem !important;
+            margin: auto;
+        }
+    }
+
+    .blogs {
+        .tag-buttons-list {
+            margin-top: 6rem;
+            .tag-buttons-list-warpper {
+                max-width: 65rem;
+            }
+        }
+        .blogs-list-wrap {
+            padding-top: 7.5rem;
+            @include mq("tablet") {
+                padding-top: 6rem;
+            }
+        }
+    }
+}

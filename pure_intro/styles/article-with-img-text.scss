@@ -1,0 +1,46 @@
+@import "../styles/variable.scss";
+
+.article-with-img-text {
+    margin: auto;
+    .img-wrap {
+        border-radius: $border-radius;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .second-column {
+        text-align: center;
+        margin-top: 4rem;
+        h2 {
+            margin-bottom: 0;
+        }
+        .content {
+            margin-top: 1rem;
+        }
+        .bottom {
+            margin-top: 3rem;
+        }
+    }
+
+    @include mq("tablet") {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &.revert {
+            flex-direction: row-reverse;
+        }
+        .img-wrap,
+        .second-column {
+            flex: 1;
+        }
+        .second-column {
+            .content-article {
+                max-width: 42rem;
+                margin: auto;
+            }
+        }
+    }
+}
