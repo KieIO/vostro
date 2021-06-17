@@ -7,22 +7,16 @@
         position: relative; 
         font-weight: bold;
         color: $color-primary;
-        max-width: 65.2rem;
         min-height: 15rem;
-        display: flex;
-        width: 75%;
-        @include mq("tablet"){
-
-        }
-        justify-content: center;
-        align-items: center;
+        display: block;
+        max-width: 27rem;
+        margin: auto;
         text-align: center;
         &::before{        
             vertical-align:middle;
             top: 0;
-            left: -5rem;
+            left: -8rem;
             height: 100%;
-            // width: 6rem;
             position: absolute;
             display: flex;
             align-items: center;
@@ -33,10 +27,18 @@
             align-items: center;
             content: url('../assets/particles/particle-right-center.svg');
             top: 0;
-            right:-5rem;
+            right:-8rem;
             height: 100%;
-            // width: 6rem;
             position: absolute;
+        }
+        @include mq("tablet"){
+            max-width: 65.2rem;
+            &::before{
+                left: -6rem;
+            }
+            &::after {
+                right: -6rem;
+            }
         }
     }
 }
