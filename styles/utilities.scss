@@ -60,7 +60,7 @@
 .u-section-padding {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    @include mq("desk") { 
+    @include mq("tablet") {
         padding-left: 4.5rem;
         padding-right: 4.5rem;
     }
@@ -77,7 +77,6 @@
     padding-bottom: 15rem;
 }
 
-
 .u-first-section-page {
     padding-top: calc(10rem + 6rem); // + header height
 }
@@ -91,6 +90,14 @@
     padding-right: 3rem;
     cursor: pointer;
     transition: all 0.2s;
+    font-size: 1.875rem;
+    line-height: 3.5rem;
+    letter-spacing: .02em;
+    @include mq("tablet") {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
     a {
         text-decoration: none;
         color: currentColor;
@@ -100,6 +107,7 @@
 .u-button-primary {
     background: $color-primary-2;
     color: $color-white;
+    font-weight: 300;
     &:hover {
         background: rgba($color-primary-2, 0.9);
         box-shadow: $boxshodow;

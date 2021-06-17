@@ -1125,7 +1125,7 @@ body {
 .u-section-padding {
   padding-left: 2.5rem;
   padding-right: 2.5rem; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 641px) {
     .u-section-padding {
       padding-left: 4.5rem;
       padding-right: 4.5rem; } }
@@ -1151,14 +1151,22 @@ body {
   padding-left: 3rem;
   padding-right: 3rem;
   cursor: pointer;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  font-size: 1.875rem;
+  line-height: 3.5rem;
+  letter-spacing: .02em; }
+  @media screen and (min-width: 641px) {
+    .u-button {
+      font-size: 1.6rem;
+      line-height: 2.2rem; } }
   .u-button a {
     text-decoration: none;
     color: currentColor; }
 
 .u-button-primary {
   background: #f6a300;
-  color: #fafafa; }
+  color: #fafafa;
+  font-weight: 300; }
   .u-button-primary:hover {
     background: rgba(246, 163, 0, 0.9);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); }
