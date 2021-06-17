@@ -942,7 +942,7 @@ body {
   flex-wrap: wrap; }
   .tag-buttons-list .tag-buttons-list-warpper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 85%;
     flex-direction: row;
@@ -950,9 +950,10 @@ body {
     @media screen and (min-width: 641px) {
       .tag-buttons-list .tag-buttons-list-warpper {
         width: 75%; } }
-    .tag-buttons-list .tag-buttons-list-warpper .tag-buttons-list-item {
+    .tag-buttons-list .tag-buttons-list-warpper .tag-buttons-list-item, .tag-buttons-list .tag-buttons-list-warpper button {
       overflow: hidden;
       margin-bottom: 1rem;
+      margin: 1.5rem;
       width: 10rem;
       height: 4rem;
       border: 1px solid #98262B;
@@ -962,7 +963,7 @@ body {
       text-align: center;
       line-height: 4rem; }
       @media screen and (min-width: 641px) {
-        .tag-buttons-list .tag-buttons-list-warpper .tag-buttons-list-item {
+        .tag-buttons-list .tag-buttons-list-warpper .tag-buttons-list-item, .tag-buttons-list .tag-buttons-list-warpper button {
           width: 17rem; } }
 
 .testimonial-item {
