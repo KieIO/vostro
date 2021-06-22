@@ -1056,26 +1056,24 @@ body {
     max-width: 27rem;
     margin: auto;
     text-align: center; }
+    .title-center .title-main::before, .title-center .title-main::after {
+      top: -2rem;
+      position: absolute;
+      height: 100%;
+      display: flex;
+      align-items: center; }
     .title-center .title-main::before {
       vertical-align: middle;
-      top: 0;
       left: -8rem;
-      height: 100%;
-      position: absolute;
-      display: flex;
-      align-items: center;
       content: url("../assets/particles/particle-left-center.svg"); }
     .title-center .title-main::after {
-      display: flex;
-      align-items: center;
       content: url("../assets/particles/particle-right-center.svg");
-      top: 0;
-      right: -8rem;
-      height: 100%;
-      position: absolute; }
+      right: -8rem; }
     @media screen and (min-width: 641px) {
       .title-center .title-main {
         max-width: 65.2rem; }
+        .title-center .title-main::before, .title-center .title-main::after {
+          top: -3rem; }
         .title-center .title-main::before {
           left: -6rem; }
         .title-center .title-main::after {
