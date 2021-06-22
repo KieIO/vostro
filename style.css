@@ -573,20 +573,20 @@ body {
       padding-bottom: 1rem; }
     .footer .burgundy input[type="email"].burgundy-input::-moz-placeholder {
       font-family: "Inter", Helvetica, Arial, Verdana, sans-serif;
-      color: #98262b;
       font-size: 1.625rem;
+      color: #98262b;
       line-height: 2.75rem;
       letter-spacing: 0.0125em; }
     .footer .burgundy input[type="email"].burgundy-input:-ms-input-placeholder {
       font-family: "Inter", Helvetica, Arial, Verdana, sans-serif;
-      color: #98262b;
       font-size: 1.625rem;
+      color: #98262b;
       line-height: 2.75rem;
       letter-spacing: 0.0125em; }
     .footer .burgundy input[type="email"].burgundy-input::placeholder {
       font-family: "Inter", Helvetica, Arial, Verdana, sans-serif;
-      color: #98262b;
       font-size: 1.625rem;
+      color: #98262b;
       line-height: 2.75rem;
       letter-spacing: 0.0125em; }
     .footer .burgundy .burgundy-input-arrow {
@@ -892,10 +892,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow-x: hidden;
-      width: -webkit-max-content;
-      width: -moz-max-content;
-      width: max-content; }
+      overflow-x: hidden; }
       @media screen and (min-width: 641px) {
         .partners-slider .partners-slider-content .items {
           flex-wrap: wrap;
@@ -911,7 +908,17 @@ body {
       .partners-slider .partners-slider-content .items .item {
         padding: 0 40px;
         margin-top: 50px;
-        min-width: 33.33%; }
+        min-width: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        @media screen and (min-width: 641px) {
+          .partners-slider .partners-slider-content .items .item {
+            padding: 0 2.5rem; } }
+        @media screen and (min-width: 1024px) {
+          .partners-slider .partners-slider-content .items .item {
+            padding: 0 6.5rem; } }
         .partners-slider .partners-slider-content .items .item img {
           width: 100%;
           -o-object-fit: cover;

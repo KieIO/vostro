@@ -21,9 +21,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
             overflow-x: hidden;
-            width: max-content;
             @include mq("tablet") {
                 flex-wrap: wrap;
                 width: 100%;
@@ -41,6 +39,17 @@
                 padding: 0 40px;
                 margin-top: 50px;
                 min-width: 33.33%;
+                @include mq("tablet") {
+                    padding: 0 2.5rem;
+                }
+                @include mq("desk") {
+                    padding: 0 6.5rem;
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
                 img {
                     width: 100%;
                     object-fit: cover;

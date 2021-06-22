@@ -1,7 +1,7 @@
 const SliderPartnerWrapClassname = "partners-slider"
 const SliderPartnerClassname = "partners-slider-content"
 
-function createDotItemElement (index) {
+function createDotItemElement(index) {
     const dotElement = document.createElement('div')
     dotElement.className = "slider-dot-item"
     if (index === 0) {
@@ -20,11 +20,16 @@ function createDotItemElement (index) {
     return dotElement
 }
 
-function initSliderDot () {
+function initSliderDot() {
     const parent = document.getElementsByClassName(SliderPartnerWrapClassname)[0]
-
+    const itemsWrap = document.querySelector(`.${SliderPartnerClassname} .items`)
     const items = document.querySelectorAll(`.${SliderPartnerClassname} .items .item`)
     const dotCount = Math.ceil(items.length / 3)
+
+    itemsWrap.setAttribute('widthmobile', `${dotCount * 100}%`)
+    if (window.innerWidth <= 641) {
+        itemsWrap.style.width = `${dotCount * 100}%`
+    }
 
     const dotsElement = document.createElement('div')
     dotsElement.className = "slider-dots"
@@ -37,3 +42,19 @@ function initSliderDot () {
 }
 
 initSliderDot()
+
+function onResizeScreen() {
+    const parent = document.getElementsByClassName(SliderPartnerWrapClassname)[0]
+    const itemsWrap = document.querySelector(`.${SliderPartnerClassname} .items`)
+    if (parent && itemsWrap) {
+        if (window.innerWidth <= 641) {
+            parent.style.transform = `translateX(0)`
+            itemsWrap.style.width = itemsWrap.getAttribute('widthmobile')
+        } else {
+            parent.style.transform = `translateX(0)`
+            itemsWrap.style.width = "100%"
+        }
+    }
+}
+
+window.addEventListener("resize", onResizeScreen);
