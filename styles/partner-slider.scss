@@ -8,72 +8,46 @@
     @include mq("tablet") {
         padding: 100px 0;
     }
-    .partners-slider-content {
-        transition: all 0.2s;
+    .partners-slider-content-tablet {
+        display: none;
         @include mq("tablet") {
+            display: block;
+            transition: all 0.2s;
             max-width: 1440px;
             margin: auto;
             transform: none;
-        }
-
-        .items {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-            @include mq("tablet") {
+            .items {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow-x: hidden;
                 flex-wrap: wrap;
                 width: 100%;
-            }
-            .column {
-                width: 100%;
-                padding: 0 20px;
-                @include mq("tablet") {
+                .column {
+                    width: 100%;
+                    padding: 0 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
-            }
-            .item {
-                padding: 0 40px;
-                margin-top: 50px;
-                min-width: 33.33%;
-                @include mq("tablet") {
+                .item {
+                    margin-top: 50px;
+                    min-width: 33.33%;
                     padding: 0 2.5rem;
-                }
-                @include mq("desk") {
-                    padding: 0 6.5rem;
-                }
+                    @include mq("desk") {
+                        padding: 0 6.5rem;
+                    }
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                img {
-                    width: 100%;
-                    object-fit: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
                 }
-            }
-        }
-    }
-    .slider-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        @include mq("tablet") {
-            display: none;
-        }
-        .slider-dot-item {
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            border: 1px solid $color-primary-2;
-            margin: 0 2rem;
-            transition: all 0.2s;
-            &.active {
-                background: $color-primary-2;
             }
         }
     }
